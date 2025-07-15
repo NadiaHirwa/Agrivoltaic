@@ -1,0 +1,45 @@
+title: Agrivoltaic Dataset (Ghana)
+subtitle: Insights from a Pilot Agrivoltaic System in Ghana
+tags:
+  - agrivoltaics
+  - renewable energy
+  - agriculture
+  - Ghana
+  - climate data
+  - solar energy
+license: CC BY 4.0
+author:
+  name: [Agrivoltaic Project Team, KNUST & RAIL - KNUST]
+  profile_url: [https://www.kaggle.com/responsibleailab]
+dataset:
+  description: |
+    This dataset provides experimental data collected from a pilot agrivoltaic system in Ghana. The study examines the integration of solar energy production with crop cultivation under agrivoltaic photovoltaic (PV) panels.  
+
+    ### Description of Experimental Site:  
+    The site consists of three plots:  
+    - **Plot 1 (Control Field):** A traditional agricultural site without PV panels.  
+    - **Plot 2 (Agrivoltaic System):** Raised PV panels allowing concurrent solar energy production and crop cultivation.  
+    - **Plot 3 (Ground-Mounted PV):** Traditional ground-mounted PV panels without crop cultivation.  
+
+    Test crops include tomatoes, chilli pepper, and eggplant. Plots 1 and 2 are further divided into nine subplots for replicated experiments.  
+
+    Data collected includes measurements of irradiation, temperature, relative humidity, soil moisture, and rainfall across the experimental plots.  
+
+    ### Key Features:  
+    - **AG-PV:** Data from agrivoltaic PV panels.  
+    - **AO-TI & AO-SS:** Temperature, relative humidity, and soil moisture in control fields.  
+    - **PO-PV:** Data from control PV panels.  
+    - **WS:** Ambient weather data, including temperature, relative humidity, and rainfall.  
+
+    ### Data Format:  
+    Each column represents:  
+    - **Parameter:** Measurement type (e.g., Irradiation, Temperature, Relative Humidity).  
+    - **Plot Location:** The specific experimental plot (e.g., AG-PV, AO-TI).  
+    - **Unit:** Units of measurement (e.g., W/m², °C, %, mm).  
+
+    ### Applications:  
+    This dataset is ideal for research on renewable energy, agrivoltaics, and sustainable agriculture in Africa.
+
+  versions:
+    - version: 1.0
+      changes: Initial dataset release.
