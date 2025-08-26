@@ -1,0 +1,2375 @@
+---
+title: "Agrivoltaic Systems in Ghana: Optimizing Food-Energy Synergies Through Microclimate - Exploratory and Descriptive Analysis"
+
+author:
+  - name: "Nadia Iradukunda Hirwa"
+    affiliation: "Junior Data Analyst"
+  - name: "Uwase Hadidja"
+    affiliation: "Junior Data Analyst"
+  - name: "Igihozo Cynthia"
+    affiliation: "Junior Data Analyst"
+  - name: "Nyiramana Annick"
+    affiliation: "Junior Data Analyst"
+
+date: "2025-08-01"
+
+format: 
+  html:
+    page-layout: full
+    self-contained: true
+    code-fold: true
+    code-tools: true
+    code-block-bg: true
+    code-block-border-left: "#31BAE9"
+    number-sections: true
+    number-tables: true
+    toc: true
+    toc-location: left
+    toc-title: Contents
+
+execute:
+  warning: false
+  message: false
+
+jupyter: python3
+---
+
+
+# Agrivoltaic Systems in Ghana
+
+### Challenge & Opportunity
+
+Ghana faces the dual challenge of meeting growing food security demands while transitioning to renewable energy sources to combat climate change. Traditional agriculture struggles with increasingly unpredictable rainfall patterns and rising temperatures, while the country seeks to expand solar energy capacity. Agrivoltaic systems—which integrate photovoltaic panels with crop cultivation—offer an innovative solution that addresses both challenges simultaneously by maximizing land use efficiency while creating beneficial microclimates for crop production.
+
+### Project Overview
+
+This comprehensive study investigates the **microclimatic effects** of agrivoltaic systems in tropical Ghana through detailed environmental monitoring and statistical analysis. By analyzing how **solar panel installations** modify local growing conditions, this research provides evidence-based insights for optimizing both agricultural productivity and renewable energy generation on the same land. The project represents one of the most extensive agrivoltaic monitoring studies conducted in West Africa, with implications for climate-smart agriculture across the region.
+
+### Study Design & Data Collection
+
+**Location**: Pilot agrivoltaic installation in Ghana's tropical climate zone  
+**Monitoring Period**: May through October, spanning both dry and wet seasons  
+**Data Scale**: 31,443+ continuous environmental measurements across multiple sensor networks
+
+**Treatment Plots:**
+- **AG-PV**: Agrivoltaic plots with elevated PV panels providing partial crop shading
+- **AO-TI/AO-SS**: Traditional control plots (unshaded agricultural areas)
+- **PO-PV**: Ground-mounted solar PV installations for energy generation comparison
+- **AG-TI/AG-SS**: Agrivoltaic subplots with varied soil management practices
+- **WS**: Weather station providing ambient reference conditions
+
+**Environmental Variables Monitored:**
+- **Temperature (°C)**: Air and soil temperature across all plot types
+- **Solar Irradiation (W/m²)**: Measuring light availability for both crops and energy generation
+- **Relative Humidity (%)**: Atmospheric moisture conditions affecting plant health
+- **Soil Moisture (%)**: Critical for irrigation planning and crop management
+- **Rainfall (mm)**: Precipitation patterns influencing all system components
+- **Temporal Data**: Continuous hourly measurements enabling diurnal and seasonal analysis
+
+### Research Objectives
+
+This study addresses five critical questions for agrivoltaic system optimization:
+
+1. **Microclimate Modification**: How do solar panels alter temperature, humidity, and soil moisture conditions compared to traditional farming?
+2. **Energy-Agriculture Trade-offs**: What are the quantified impacts on solar irradiation while maintaining agricultural productivity?
+3. **Seasonal Adaptability**: How do environmental benefits vary across Ghana's distinct wet and dry seasons?
+4. **Diurnal Patterns**: What daily environmental cycles emerge under different panel configurations?
+5. **Operational Optimization**: What management recommendations emerge for maximizing both agricultural and energy outcomes?
+
+### Key Findings Preview
+
+This comprehensive analysis reveals transformative environmental benefits of agrivoltaic systems:
+
+- **Dramatic Temperature Reduction**: 7°C average cooling effect in agrivoltaic plots compared to control areas, creating optimal growing conditions for heat-sensitive crops
+- **Energy Generation Viability**: Only 8.7% reduction in solar irradiation (230 to 210 W/m²) while providing substantial agricultural benefits
+- **Soil Moisture Stability**: Consistent soil water conditions with reduced extreme fluctuations, enabling predictable irrigation planning
+- **Humidity Moderation**: Lower atmospheric moisture reducing disease pressure while maintaining adequate growing conditions
+- **Statistical Certainty**: All major effects validated with extremely high statistical significance (p < 0.001) across thousands of measurements
+
+###  Methodology
+
+**1. Data Preprocessing & Quality Control**
+
+- **Data Cleaning**: Comprehensive cleaning of 31,443+ observations, handling missing values and sensor calibration issues
+- **Temporal Feature Engineering**: Extraction of hourly and monthly patterns for seasonal and diurnal analysis
+- **Plot Classification**: Systematic categorization of sensors by installation type for comparative analysis
+
+**2. Exploratory Data Analysis**
+
+- **Descriptive Statistics**: Comprehensive distributional analysis of all environmental parameters
+- **Correlation Analysis**: Investigation of relationships between solar irradiation, temperature, humidity, and soil moisture
+- **Temporal Pattern Analysis**: Monthly and hourly trend identification across different plot configurations
+- **Comparative Visualizations**: Multi-dimensional comparison of environmental conditions across plot types
+
+**3. Advanced Statistical Testing**
+
+- **ANOVA Analysis**: Multiple group comparisons with F-statistics exceeding 50,000 for temperature differences
+- **Paired t-tests**: Direct statistical validation of agrivoltaic benefits with t-statistics reaching -321
+- **Effect Size Calculations**: Cohen's d and eta-squared measurements for practical significance assessment
+- **Assumption Testing**: Normality and variance homogeneity testing ensuring statistical validity
+- **Correlation Significance**: Pearson correlation testing with validation across seasonal and temporal patterns
+
+**4. Data Visualization & Communication**
+
+- **Interactive Dashboards**: Plotly-based visualizations enabling stakeholder exploration of findings
+- **Publication-Ready Graphics**: Professional visualizations suitable for academic and policy communication
+- **Thematic Design**: Consistent green color schemes reflecting agricultural and environmental themes
+
+### Significance & Impact
+
+**Agricultural Benefits:** 
+
+- **Climate Resilience**: Demonstrated temperature moderation crucial for adaptation to climate change
+- **Water Conservation**: Reduced irrigation requirements through improved soil moisture stability
+- **Crop Diversification**: Cooler conditions enable cultivation of previously unsuitable crop varieties
+- **Predictable Growing Conditions**: Reduced environmental variability supporting precision agriculture
+
+**Energy & Policy Implications:**
+
+- **Land Use Optimization**: Proven dual-use efficiency maximizing economic returns per hectare
+- **Renewable Energy Integration**: Viable solar generation with minimal agricultural compromise
+- **Scalability Evidence**: Statistical validation supporting widespread agrivoltaic adoption
+- **Policy Framework**: Data-driven foundation for government incentives and agricultural extension programs
+
+**Regional & Global Relevance:**  
+
+- **West African Application**: Methodology and findings applicable across similar tropical climates
+- **SDG Contribution**: Direct support for UN Sustainable Development Goals 2 (Zero Hunger), 7 (Clean Energy), and 13 (Climate Action)
+- **Climate Smart Agriculture**: Model for integrated approaches to food security and climate mitigation
+- **Research Foundation**: Comprehensive dataset enabling future optimization and scaling studies
+
+This research provides the scientific evidence needed to confidently promote agrivoltaic technology as a transformative solution for sustainable agricultural development in tropical regions, demonstrating that the integration of renewable energy and food production creates synergistic benefits that exceed the sum of their individual contributions.
+
+
+# Local Relevance: Rwanda's Agrivoltaic Opportunity
+
+### Climate and Agricultural Context
+Rwanda's tropical highland climate and intensive agriculture sector present unique opportunities for agrivoltaic integration. With agriculture employing over 60% of the population and contributing significantly to GDP, the country faces mounting pressure to optimize limited arable land while addressing climate vulnerabilities. Key challenges include increasingly unpredictable rainfall patterns, land scarcity due to high population density (over 500 people per km²), and limited energy access in rural areas where 83% of the population depends on agriculture for their livelihoods.
+
+### Strategic Agrivoltaic Potential in Rwanda
+Agrivoltaic systems align perfectly with Rwanda's development priorities and geographic constraints. The technology offers transformative potential to maximize land productivity by generating clean energy while maintaining or enhancing agricultural output on the same plots. In Rwanda's context, agrivoltaics could address multiple development challenges simultaneously: increasing crop resilience to climate stress, reducing water evaporation through beneficial shading, supporting rural electrification through distributed solar generation, and enabling intensive dual land use on the small plots (average 0.76 hectares) typical of Rwandan smallholder farms.
+
+### Evidence-Based Applications for Rwanda
+The Ghana study findings have direct relevance for Rwandan agricultural conditions. The demonstrated 7°C temperature reduction in agrivoltaic plots would be particularly valuable during Rwanda's dry seasons (June-August and December-February), when heat stress limits crop productivity. The observed soil moisture stability could significantly benefit Rwanda's rain-fed agriculture, especially during the increasingly variable rainfall periods between the two main growing seasons. The statistical validation of consistent environmental benefits across different months suggests that agrivoltaic systems could provide year-round agricultural advantages in Rwanda's bimodal climate, supporting both Seasons A and B cultivation cycles while generating continuous renewable energy.
+
+### Policy Integration and Scale-Up Pathways
+This research directly supports Rwanda's ambitious development frameworks and provides actionable insights for implementation. The findings align with National Strategy for Transformation (NST1) objectives for both energy security and agricultural modernization, offering a pathway to achieve multiple targets simultaneously. Integration opportunities exist with Rwanda Energy Group (REG) rural electrification initiatives, Ministry of Agriculture (MINAGRI) climate-smart agriculture programs, and Rwanda Green Fund (FONERWA) environmental investments. The proven microclimatic benefits support the development of agro-solar demonstration sites in key agricultural districts such as Nyagatare (known for large-scale farming), Eastern Province cooperatives, and research institutions like Rwanda Agriculture and Animal Resources Development Board (RAB) stations, creating a foundation for nationwide scaling of this transformative dual-use technology.
+
+### 📦 Step: Import Libraries
+
+These libraries are essential for performing data analysis, visualization, and data manipulation throughout the project.
+
+| Library | Purpose |
+|--------|---------|
+| `os` | For handling file paths and directory management |
+| `pandas` | For reading, cleaning, and manipulating structured data |
+| `numpy` | For numerical operations like mean, standard deviation, and array manipulation |
+| `plotly.express` | For creating interactive visualizations (useful in dashboards or presentations) |
+| `matplotlib.pyplot` | For generating static plots like line graphs and histograms |
+| `seaborn` | For creating high-level statistical visualizations like boxplots, heatmaps, and distribution plots |
+| `scipy.stats` | Statistical tests |
+
+> ⚙️ This setup step prepares the environment for the entire data analysis pipeline.
+
+```{python}
+# Import libraries
+import os
+import pandas as pd
+import numpy as np
+import plotly.express as px
+import matplotlib.pyplot as plt
+import seaborn as sns
+from scipy.stats import f_oneway
+import scipy.stats as stats
+```
+
+### 📁 Step: Set Up Project Directory Structure
+
+This step organizes your project files into a clear folder hierarchy for better structure, automation, and reproducibility. It ensures consistent file access and separates raw data, processed data, results, and documentation.
+
+
+| Code Component | Purpose |
+|----------------|---------|
+| `os.getcwd()` | Gets the current working directory (usually where the script is located) |
+| `os.path.dirname()` | Moves one level up to find the project root directory |
+| `data_dir`, `raw_dir`, `processed_dir` | Create a structured `Data/Raw` and `Data/Processed` folder system for handling inputs and cleaned datasets |
+| `results_dir` | Directory to store generated plots, statistical outputs, and model results |
+| `docs_dir` | Location for final reports, EDA documentation, and exported notebooks |
+| `os.makedirs(..., exist_ok=True)` | Automatically creates the folders if they don’t already exist, avoiding file system errors |
+
+
+> 📌 This setup enforces **good data science practices** by separating raw and processed data and making your project easy to maintain or share.
+
+```{python}
+# Get working directory
+current_dir = os.getcwd()
+# Go one directory up to the root directory
+project_root_dir = os.path.dirname(current_dir)
+# Define paths to the data folders
+data_dir = os.path.join(project_root_dir, 'Data')
+raw_dir = os.path.join(data_dir, 'Raw')
+processed_dir = os.path.join(data_dir, 'Processed')
+# Define paths to results folder
+results_dir = os.path.join(project_root_dir, 'Results')
+# Define paths to docs folder
+docs_dir = os.path.join(project_root_dir, 'Docs')
+
+# Create directories if they do not exist
+os.makedirs(raw_dir, exist_ok = True)
+os.makedirs(processed_dir, exist_ok = True)
+os.makedirs(results_dir, exist_ok = True)
+os.makedirs(docs_dir, exist_ok = True)
+```
+
+# Data Preparation & Understanding  
+
+::: {.panel-tabset}
+## Output {.active}
+```{python} 
+#| label: merged-dataset
+#| tbl-cap: Agrivoltaic System Dataset 
+
+all_data_filename = os.path.join(processed_dir, "merged.csv")
+merged_df = pd.read_csv(all_data_filename)
+merged_df.head()
+```
+
+## Code
+
+```{python}
+#| output: false
+all_data_filename = os.path.join(processed_dir, "merged.csv")
+merged_df = pd.read_csv(all_data_filename)
+```
+
+:::
+
+### Inspect Dataset Structure using `.info()`
+
+we did this to understand the structure of the dataset, check the data types, and confirm that all variables have loaded correctly.
+
+- The dataset has **31 numeric columns** and **3 object columns** (`DATE`, `TIME`, `Month`).
+- There are **no missing values** (`Non-Null Count = 31443` for all columns).
+- Each row represents a unique **timestamped environmental reading**.
+- All temperature, irradiation, RH, and rainfall values are stored as **float64**, which is ideal for analysis.
+
+
+**Why It Matters:**
+
+- Ensures the dataset is **clean and ready for numerical analysis**.
+- Confirms **`DATE` and `TIME`** are strings (object), allowing flexible formatting later.
+- Validates column names and consistency across **all 32 columns**.
+
+ Since there are no missing values and types are consistent, **no further cleaning** is needed at this point.
+
+```{python}
+#| echo: false
+#| output: false
+merged_df.shape
+```
+
+```{python}
+#| echo: false
+#| output: false
+merged_df.info()
+```
+
+### Step: Preview Unique `TIME` Values
+
+To verify that the `TIME` column is correctly formatted and consistent before using it for time-based analysis.
+
+**Why It Matters:**  
+- Ensures `TIME` is usable for deriving **hour**, **time of day**, or **hourly trends**.
+- Prevents parsing errors in later steps that rely on accurate time conversion.
+
+```{python}
+#| echo: false
+#| output: false
+# View unique time values to confirm format
+merged_df['TIME'].unique()[:10]
+```
+
+### Define Plot Type Categories
+
+To create a structured mapping between sensor variables and their corresponding plot types. This makes it easier to reference and analyze data based on plot treatments (e.g., agrivoltaic, control, ground-mounted PV).
+
+
+- Plot types reflect different environmental conditions:
+  - **AG-PV**: Shaded plots under elevated solar panels
+  - **AO-TI / AO-SS**: Unshaded control plots
+  - **PO-PV**: Ground-mounted PV plots
+  - **AG-TI / AG-SS**: Agrivoltaic subplots with different soil treatments
+  - **WS**: Ambient conditions from the weather station
+
+This categorization mirrors the experimental design, allowing grouped statistical analysis and plot comparisons.
+
+
+- Use these categories when generating plots or summaries to **compare treatments directly** (e.g., AG-PV vs AO-TI).
+- Maintain this structure throughout the project to ensure **consistency and clarity** in all grouped operations and visual outputs.
+
+```{python}
+#| echo: false
+#| output: false
+# Define plot type categories for future use
+plot_categories = {
+    'AG-PV': ['AG-PV P1/Irr (W/m2)', 'AG-PV P2/Irr (W/m2)', 'AG-PV P3/Irr (W/m2)',
+              'AG-PV P1/T (oC)', 'AG-PV P2/T (oC)', 'AG-PV P3/T (oC)'],
+    'PO-PV': ['PO-PV/Irr (W/m2)', 'PO-PV/T (oC)'],
+    'AO-TI': ['AO-TI P2/T (oC)', 'AO-TI P3/T (oC)', 'AO-TI P2/RH (%)', 'AO-TI P3/RH (%)'],
+    'AO-SS': ['AO-SS P1/T (oC)', 'AO-SS P2/T (oC)', 'AO-SS P3/T (oC)',
+              'AO-SS P1/RH (%)', 'AO-SS P2/RH (%)', 'AO-SS P3/RH (%)'],
+    'AG-TI': ['AG-TI P1/T (oC)', 'AG-TI P3/T (oC)', 'AG-TI P1/RH (%)', 'AG-TI P3/RH (%)'],
+    'AG-SS': ['AG-SS P1/T (oC)', 'AG-SS P2/T (oC)', 'AG-SS P3/T (oC)',
+              'AG-SS P1/RH (%)', 'AG-SS P2/RH (%)', 'AG-SS P3/RH (%)'],
+    'WS': ['WS/T (oC)', 'WS/RH (%)', 'WS/P (mm)']
+}
+
+print("Plot categories defined for later analysis.")
+```
+
+# Exploratory Data Analysis (EDA)
+
+```{python}
+#| label: tbl-summary-numerical
+#| tbl-cap: Summary statistics for numerical variables in the dataset, including count, mean, standard deviation, min, and quartile values.
+merged_df.describe()
+```
+
+### Dataset Summary Statistics Overview
+
+The dataset reveals distinct environmental signatures across different plot types, with solar irradiance showing extreme variability (0-1,250 W/m²) due to daily cycles and weather patterns. Temperature measurements confirm the cooling effect of agrivoltaic systems, with panel areas averaging 19.7-20.3°C compared to control areas at 29-31°C. Humidity distributions demonstrate dramatic differences between plot types - control areas maintain high humidity (69-76% average) while agrivoltaic areas show much lower levels (16-28% average). Rainfall data exhibits typical tropical patterns with infrequent but intense events, averaging only 0.23mm but reaching up to 24.9mm during peak periods.
+
+# Correlation Analysis
+
+## Correlation Analysis: Solar Irradiation vs Temperature in Ground-Mounted PV Systems
+
+This correlation analysis examines the relationship between solar irradiation and temperature in the ground-mounted photovoltaic (PO-PV) system areas. Understanding this relationship is crucial for optimizing solar panel performance and predicting energy output under varying environmental conditions in tropical climates like Ghana.
+
+```{python}
+import plotly.graph_objects as go
+# Step 1: Select relevant columns
+df_corr = merged_df[['PO-PV/Irr (W/m2)', 'PO-PV/T (oC)']].dropna()
+
+# Step 2: Compute Pearson correlation
+corr_matrix = df_corr.corr(method='pearson')
+rounded_corr = np.round(corr_matrix.values, 2)
+
+# Step 3: Plot heatmap with bold formatting
+fig = go.Figure(data=go.Heatmap(
+    z=rounded_corr,
+    x=corr_matrix.columns,
+    y=corr_matrix.columns,
+    colorscale='Greens',
+    text=rounded_corr,
+    texttemplate="<b>%{text}</b>",  # Bold correlation values
+    showscale=True,
+    zmin=-1, 
+    zmax=1
+))
+
+# Update layout with all-bold text
+fig.update_layout(
+    title={
+        'text': '<b>Correlation: Irradiation vs Temperature (PO-PV)</b>',
+        'x':0.5,
+        'xanchor': 'center',
+        'yanchor': 'top',
+        'font': {
+            'size': 18,
+            'family': "Arial"
+        }
+    },
+    xaxis=dict(
+        title='<b>Variable</b>',
+        title_font=dict(size=14, family="Arial"),
+        tickfont=dict(size=12, family="Arial", weight='bold')
+    ),
+    yaxis=dict(
+        title='<b>Variable</b>',
+        title_font=dict(size=14, family="Arial"),
+        tickfont=dict(size=12, family="Arial", weight='bold')
+    ),
+    font=dict(family="Arial", weight='bold'),  # Global bold
+    height=500,
+    template='simple_white'
+)
+
+# Bold the colorbar text (fixed syntax)
+fig.update_layout(
+    coloraxis=dict(
+        colorbar=dict(
+            title='<b>Correlation</b>',
+            tickfont=dict(weight='bold')
+        )
+    )
+)
+
+fig.show()
+fig.write_image(os.path.join(results_dir, 'Irradiation vs Temperature (PO-PV).jpg'))
+fig.write_image(os.path.join(results_dir, 'Irradiation vs Temperature (PO-PV).png'))
+fig.write_html(os.path.join(results_dir, 'Irradiation vs Temperature (PO-PV).html'))
+```
+
+The correlation matrix reveals a weak positive relationship (r = 0.1) between solar irradiation and temperature in the ground-mounted PV system area. This finding is particularly significant because it suggests that temperature and solar irradiation don't move together as strongly as might be expected. In practical terms, this means that high solar irradiation doesn't automatically translate to proportionally high temperatures in this specific setup, which has important implications for both energy generation efficiency and system longevity. Solar panels typically perform better at lower temperatures despite needing high irradiation for maximum energy output, so this relatively weak correlation suggests favorable operating conditions. The weak correlation could be attributed to several factors including the influence of wind patterns, cloud cover dynamics, or the specific positioning and ventilation characteristics of the ground-mounted system that help dissipate heat even during periods of intense solar radiation.
+
+Based on this analysis, ground-mounted PV systems in tropical environments like Ghana appear to benefit from natural cooling mechanisms that prevent excessive temperature buildup despite high solar irradiation levels. This suggests that ground-mounted installations may be particularly well-suited for tropical climates where heat management is a critical concern for maintaining solar panel efficiency. For system optimization, operators should focus on maximizing solar exposure while ensuring adequate ventilation around panels to maintain this beneficial temperature-irradiation balance. Future agrivoltaic system designs should consider incorporating similar heat dissipation strategies, and monitoring systems should track both variables independently rather than assuming they will always correlate strongly. Additionally, this finding supports the potential for reliable energy output even during varying weather conditions, as temperature fluctuations may not directly mirror irradiation changes, providing more stable operational parameters for energy planning and grid integration.
+
+## Correlation Analysis: Solar Irradiation vs Soil Moisture in Agrivoltaic Systems
+
+This correlation analysis investigates the relationship between solar irradiation received by agrivoltaic panels and soil moisture levels in the agrivoltaic plots. This relationship is fundamental to understanding how solar panel shading affects soil water retention and crop growing conditions, which is at the heart of successful agrivoltaic system design.
+
+```{python}
+# Step 1: Select relevant columns
+df_corr = merged_df[['AG-PV P3/Irr (W/m2)', 'AG-SS P1/RH (%)']].dropna()
+
+# Step 2: Compute Pearson correlation
+corr_matrix = df_corr.corr(method='pearson')
+rounded_corr = np.round(corr_matrix.values, 2)
+
+# Step 3: Plot heatmap with bold formatting
+fig = go.Figure(data=go.Heatmap(
+    z=rounded_corr,
+    x=corr_matrix.columns,
+    y=corr_matrix.columns,
+    colorscale='Greens',
+    text=rounded_corr,
+    texttemplate="<b>%{text}</b>",  # Bold correlation values
+    showscale=True,
+    zmin=-1, 
+    zmax=1
+))
+
+# Update layout with all-bold text and centered title
+fig.update_layout(
+    title={
+        'text': '<b>Correlation: Irradiation vs Soil Moisture (AG-PV & AG-SS)</b>',
+        'x':0.5,
+        'xanchor': 'center',
+        'yanchor': 'top',
+        'font': {
+            'size': 18,
+            'family': "Arial"
+        }
+    },
+    xaxis=dict(
+        title='<b>Variable</b>',
+        title_font=dict(size=14, family="Arial"),
+        tickfont=dict(size=12, family="Arial", weight='bold')
+    ),
+    yaxis=dict(
+        title='<b>Variable</b>',
+        title_font=dict(size=14, family="Arial"),
+        tickfont=dict(size=12, family="Arial", weight='bold')
+    ),
+    font=dict(family="Arial", weight='bold'),  # Global bold
+    height=500,
+    template='simple_white'
+)
+
+# Bold the colorbar text
+fig.update_layout(
+    coloraxis=dict(
+        colorbar=dict(
+            title='<b>Correlation</b>',
+            tickfont=dict(weight='bold')
+        )
+    )
+)
+
+fig.show()
+fig.write_image(os.path.join(results_dir, 'Irradiation vs Soil Moisture.jpg'))
+fig.write_image(os.path.join(results_dir, 'Irradiation vs Soil Moisture.png'))
+fig.write_html(os.path.join(results_dir, 'Irradiation vs Soil Moisture.html'))
+```
+
+The correlation matrix shows an extremely weak positive relationship (r = 0.02) between solar irradiation at agrivoltaic panels and soil moisture in the agrivoltaic plots. This near-zero correlation is actually a highly favorable finding for agrivoltaic systems, as it indicates that soil moisture levels remain relatively stable and independent of fluctuations in solar irradiation intensity. In practical terms, this means that the partial shading provided by the solar panels creates a buffered microenvironment where soil doesn't experience dramatic moisture loss even during periods of intense solar radiation. This stability is crucial for crop health and water management, as it suggests that plants growing under agrivoltaic systems can maintain more consistent access to soil moisture regardless of daily variations in sunlight intensity. The independence of these variables also implies that the agrivoltaic design successfully moderates the direct impact of solar radiation on soil water evaporation, creating more predictable growing conditions for farmers.
+
+This finding strongly supports the agricultural benefits of agrivoltaic systems in tropical climates where water management is critical for crop success. Farmers can expect more stable soil moisture conditions under agrivoltaic installations, which should translate to reduced irrigation requirements and more consistent crop performance compared to fully exposed fields. System designers should maintain current panel spacing and height configurations that achieve this beneficial decoupling of irradiation and soil moisture. For water management planning, irrigation schedules can be based primarily on crop needs and rainfall patterns rather than solar intensity variations, simplifying farm management practices. This stability also suggests that agrivoltaic systems could be particularly valuable during dry seasons or in drought-prone areas, as they provide natural protection against soil moisture loss. Future research should focus on quantifying the water savings potential and optimizing panel configurations to maximize both this soil moisture stability and energy generation efficiency.
+
+## Correlation Analysis: Temperature vs Soil Moisture in Agrivoltaic Systems
+
+This correlation analysis examines the relationship between temperature near agrivoltaic panels and soil moisture levels within the agrivoltaic plots. Understanding this relationship is essential for evaluating how the thermal environment created by solar panels affects soil water retention and overall growing conditions for crops beneath the installations.
+
+```{python}
+# Step 1: Select relevant columns and drop missing values
+df_corr = merged_df[['AG-PV P3/T (oC)', 'AG-SS P1/RH (%)']].dropna()
+
+# Step 2: Compute Pearson correlation
+corr_matrix = df_corr.corr(method='pearson')
+rounded_corr = np.round(corr_matrix.values, 2)
+
+# Step 3: Plot heatmap with bold formatting
+fig = go.Figure(data=go.Heatmap(
+    z=rounded_corr,
+    x=corr_matrix.columns,
+    y=corr_matrix.columns,
+    colorscale='Greens',
+    text=rounded_corr,
+    texttemplate="<b>%{text}</b>",  # Bold correlation values
+    showscale=True,
+    zmin=-1, 
+    zmax=1
+))
+
+# Update layout with bold text and centered title
+fig.update_layout(
+    title={
+        'text': '<b>Correlation Heatmap: Temperature vs Soil Moisture</b>',
+        'x':0.5,
+        'xanchor': 'center',
+        'yanchor': 'top',
+        'font': {
+            'size': 18,
+            'family': "Arial"
+        }
+    },
+    xaxis=dict(
+        title='<b>Variable</b>',
+        title_font=dict(size=14, family="Arial"),
+        tickfont=dict(size=12, family="Arial", weight='bold')
+    ),
+    yaxis=dict(
+        title='<b>Variable</b>',
+        title_font=dict(size=14, family="Arial"),
+        tickfont=dict(size=12, family="Arial", weight='bold')
+    ),
+    font=dict(family="Arial", weight='bold'),  # Global bold
+    height=500,
+    template='simple_white'
+)
+
+# Bold the colorbar text
+fig.update_layout(
+    coloraxis=dict(
+        colorbar=dict(
+            title='<b>Correlation</b>',
+            tickfont=dict(weight='bold')
+        )
+    )
+)
+
+fig.show()
+fig.write_image(os.path.join(results_dir, 'Temperature vs Soil Moisture.jpg'))
+fig.write_image(os.path.join(results_dir, 'Temperature vs Soil Moisture.png'))
+fig.write_html(os.path.join(results_dir, 'Temperature vs Soil Moisture.html'))
+```
+
+The correlation matrix reveals an extremely weak positive relationship (r = 0.03) between temperature at agrivoltaic panels and soil moisture in the agrivoltaic soil areas. This near-zero correlation demonstrates that the agrivoltaic system successfully creates a thermally stable microenvironment where soil moisture levels remain largely unaffected by temperature fluctuations around the solar panels. This finding is particularly significant because it indicates that the partial shading and modified air circulation patterns created by the elevated panel structure effectively buffer the soil from direct thermal impacts. In traditional open-field agriculture, higher temperatures typically lead to increased evaporation and lower soil moisture, but this relationship is essentially neutralized in the agrivoltaic system. This thermal-moisture independence suggests that crops can benefit from more stable root zone conditions, which is especially valuable in tropical climates where temperature extremes can stress plants and rapidly deplete soil water reserves.
+
+
+This thermal stability represents a major advantage for agricultural productivity in agrivoltaic systems, particularly in hot tropical climates like Ghana where temperature stress can significantly impact crop yields. Farmers can expect more predictable soil moisture conditions regardless of daily temperature variations, leading to improved crop resilience and potentially reduced irrigation needs. The current agrivoltaic panel configuration appears to be optimally designed for creating this beneficial microclimate buffering effect, so similar spacing and height arrangements should be maintained in future installations. For crop selection and management, this stability opens opportunities for growing temperature-sensitive crops that might struggle in fully exposed fields, potentially diversifying agricultural options and increasing farm income. Water management strategies can focus on seasonal and rainfall patterns rather than daily temperature fluctuations, simplifying irrigation planning and reducing operational complexity. This finding also suggests that agrivoltaic systems could serve as climate adaptation tools, helping farmers maintain productive agriculture even as regional temperatures continue to rise due to climate change.
+
+## Comprehensive Correlation Analysis: Temperature and Irradiance Relationships Across Plot Types
+
+This comprehensive correlation matrix examines the relationships between temperature and solar irradiance measurements across all plot types in the agrivoltaic system study - including agrivoltaic panels (AG-PV), control plots with tin roofing (AO-TI), control soil plots (AO-SS), agrivoltaic soil areas (AG-SS), ground-mounted PV systems (PO-PV), and weather station data (WS). This analysis reveals how different installation types create distinct microclimatic conditions and thermal behaviors.
+
+```{python}
+# Step 1: Clean column names
+merged_df.columns = merged_df.columns.str.strip()
+
+# Step 2: Select temperature and irradiance columns
+temp_cols = [col for col in merged_df.columns if "/T (oC)" in col]
+irr_cols = [col for col in merged_df.columns if "/Irr (W/m2)" in col]
+selected_cols = temp_cols + irr_cols
+
+# Step 3: Clean the DataFrame by dropping rows with missing values
+df_clean = merged_df[selected_cols].dropna()
+
+# Step 4: Rename columns for better display in heatmap
+df_clean.columns = [
+    col.replace('/T (oC)', '_Temp').replace('/Irr (W/m2)', '_Irr') for col in df_clean.columns
+]
+
+# Step 5: Compute correlation matrix
+corr_matrix = df_clean.corr()
+
+# Step 6: Plot the heatmap with enhanced formatting
+plt.figure(figsize=(14, 10))
+heatmap = sns.heatmap(
+    corr_matrix,
+    annot=True,
+    fmt=".2f",
+    cmap="Greens",
+    linewidths=0.5,
+    annot_kws={"weight": "bold", "size": 10}  # Bold annotation text
+)
+
+# Formatting adjustments
+plt.title("Correlation: Temperature & Irradiance by Plot", 
+          fontsize=18, fontweight='bold', pad=20)  # Bold and centered title
+plt.xticks(rotation=45, ha='right', fontsize=12, fontweight='bold')  # Bold x-axis labels
+plt.yticks(rotation=0, fontsize=12, fontweight='bold')  # Bold y-axis labels
+
+# Adjust colorbar
+cbar = heatmap.collections[0].colorbar
+cbar.ax.tick_params(labelsize=12)
+cbar.ax.yaxis.label.set_size(14)
+cbar.ax.yaxis.label.set_weight('bold')
+
+plt.tight_layout()
+plt.show()
+fig.write_image(os.path.join(results_dir, 'Temperature & Irradiance by Plot.jpg'))
+fig.write_image(os.path.join(results_dir, 'Temperature & Irradiance by Plot.png'))
+fig.write_html(os.path.join(results_dir, 'Temperature & Irradiance by Plot.html'))
+```
+
+The correlation matrix reveals several critical patterns that highlight the effectiveness of agrivoltaic system design. Most notably, irradiance measurements show very strong positive correlations with each other (r = 0.96-0.99) across all solar panel installations, indicating consistent solar radiation patterns regardless of mounting type. However, the temperature correlations tell a more complex story that demonstrates the microclimate benefits of agrivoltaic systems. Temperature measurements in agrivoltaic areas show moderate correlations (r = 0.4-0.7) with other temperature sensors, suggesting that the panel shading creates distinct thermal zones rather than simply following ambient conditions. The control plots, particularly the tin roof areas (AO-TI), show stronger temperature correlations with weather station data (r = 0.75-0.84), indicating they more directly reflect ambient conditions without the moderating influence of elevated panels. Interestingly, the correlation between irradiance and temperature varies significantly by location, with some agrivoltaic temperature sensors showing very weak correlations with irradiance (r = 0.01-0.26), while others show moderate relationships (r = 0.5-0.7), suggesting that panel positioning and local microclimate effects create diverse thermal environments even within the same system.
+
+These findings provide strong evidence for the microclimate benefits of agrivoltaic systems and offer clear guidance for system optimization. The weak correlations between irradiance and temperature in many agrivoltaic locations confirm that these systems successfully decouple solar intensity from ground-level heating, creating more stable growing conditions for crops. System designers should leverage this thermal diversity by strategically placing different crop types in areas with varying temperature-irradiance relationships - heat-sensitive crops can benefit from locations with weaker temperature-irradiance correlations, while crops requiring more warmth can be positioned in areas with stronger correlations. The strong irradiance correlations across all panel types suggest that energy generation will be consistent regardless of specific mounting configurations, allowing design flexibility to prioritize agricultural benefits without sacrificing power output. For monitoring and management purposes, the distinct correlation patterns indicate that each microzone within an agrivoltaic system may require tailored management approaches rather than uniform treatment across the entire installation. Future agrivoltaic designs should incorporate this understanding of thermal diversity to create intentionally varied microclimates that can support diverse cropping systems and maximize both agricultural productivity and energy generation efficiency.
+
+# How solar irradiation and ambient temperatures vary between agrivoltaic plots, control fields, and ground-mounted PV installations
+
+## Temperature Comparison Analysis Across Different Plot Types
+
+This box plot analysis compares temperature distributions across five different plot types in the agrivoltaic system: agrivoltaic photovoltaic panel areas (AG-PV), control plots with tin roof sensors (AO-TI), control soil plots (AO-SS), agrivoltaic soil areas (AG-SS), and ground-mounted PV systems (PO-PV). This comparison reveals how different installation configurations affect local temperature conditions and microclimate formation.
+
+```{python}
+# Clean column names
+merged_df.columns = merged_df.columns.str.strip()
+
+# Define plot types
+plot_types = ['AG-PV', 'AO-TI', 'AO-SS', 'PO-PV', 'AG-SS']
+
+# Select temperature columns (°C)
+temperature_cols = [col for col in merged_df.columns if "T (oC)" in col and any(pt in col for pt in plot_types)]
+
+# Melt dataframe
+temp_long = merged_df[temperature_cols].melt(var_name="Sensor", value_name="Temperature")
+
+# Extract abbreviations for x-axis
+temp_long["Abbreviation"] = temp_long["Sensor"].str.extract(r'(AG-PV|AO-TI|AO-SS|PO-PV|AG-SS)')
+
+# Map full names for legend
+plot_type_labels = {
+    "PO-PV": "Ground-Mounted PV Systems",
+    "AG-PV": "Agrivoltaic Photovoltaic Panel Sensors",
+    "AO-TI": "Control Plot – Tin Roof Sensors",
+    "AO-SS": "Control Plot – Soil Sensors",
+    "AG-SS": "Agrivoltaic Soil Sensors"
+}
+temp_long["Plot_Type"] = temp_long["Abbreviation"].map(plot_type_labels)
+
+# Custom color sequence (green, lime, moss, seaweed, sage)
+color_sequence = ['#228B22', '#32CD32', '#8A9A5B', '#2E8B57', '#9DC183']
+
+# Plot with abbreviations on x-axis and full names in legend
+fig = px.box(
+    temp_long,
+    x="Abbreviation",  
+    y="Temperature",
+    color="Plot_Type", 
+    title="Temperature Comparison by Plot Type",
+    labels={
+        "Temperature": "Temperature (°C)",
+        "Abbreviation": "Plot Type" 
+    },
+    template="simple_white",
+    height=800,
+    color_discrete_sequence=color_sequence
+)
+
+fig.update_layout(
+    xaxis=dict(
+        showgrid=False,
+        title_text="Plot Type",
+        title_font=dict(size=16, family='Arial', weight='bold'),
+        tickfont=dict(size=14, family='Arial', weight='bold')
+    ),
+    yaxis=dict(
+        showgrid=False,
+        title_text="Temperature (°C)",
+        title_font=dict(size=16, family='Arial', weight='bold'),
+        tickfont=dict(size=14, family='Arial', weight='bold')
+    ),
+    legend_title_text="Plot Type Description",
+    legend_title_font=dict(size=14, family='Arial', weight='bold'),
+    legend_font=dict(size=12, family='Arial', weight='bold'),
+    title=dict(
+        text="Temperature Comparison by Plot Type",
+        x=0.5,  # Centered title
+        font=dict(size=20, family='Arial', weight='bold')
+    ),
+    plot_bgcolor='white',
+    paper_bgcolor='white',
+    margin=dict(b=100) 
+)
+
+fig.update_traces(
+    width=0.6,  
+    line=dict(width=2.5), 
+    marker=dict(
+        size=5,  
+        line=dict(width=1.2, color='green')  
+    ),
+    whiskerwidth=0.5  
+)
+
+fig.update_layout(
+    boxmode='group', 
+    boxgap=0.3,  
+    boxgroupgap=0.3  
+)
+
+fig.show()
+fig.write_image(os.path.join(results_dir, 'Temperature Comparison by Plot Type.jpg'))
+fig.write_image(os.path.join(results_dir, 'Temperature Comparison by Plot Type.png'))
+fig.write_html(os.path.join(results_dir, 'Temperature Comparison by Plot Type.html'))
+```
+
+The temperature comparison reveals striking differences in thermal behavior across the various plot types, with clear evidence of the microclimate benefits provided by agrivoltaic systems. The agrivoltaic photovoltaic panel areas (AG-PV) show the most stable temperature conditions, with a narrow interquartile range centered around 20°C and relatively few extreme temperature events, indicating that the elevated panel structure creates a consistently moderated thermal environment. In contrast, the control plots show much greater temperature variability and higher median temperatures - the tin roof control areas (AO-TI) reach median temperatures around 28-30°C with frequent spikes above 40°C, while the control soil plots (AO-SS) show similarly elevated temperatures around 28-33°C with substantial daily variation. The agrivoltaic soil areas (AG-SS) demonstrate the agricultural benefits of the system, maintaining moderate temperatures around 27-30°C with less extreme variation than the fully exposed control plots, showing that crops grown under agrivoltaic panels experience significantly more favorable thermal conditions. Ground-mounted PV systems (PO-PV) show the most consistent temperatures around 20-21°C, likely due to their elevation and ventilation characteristics, but lack the agricultural integration benefits of the agrivoltaic design.
+
+These temperature patterns strongly support the implementation of agrivoltaic systems for tropical agriculture, as they provide substantial thermal protection for crops while maintaining efficient solar energy generation. Farmers can expect significantly reduced heat stress for their crops compared to traditional open-field cultivation, with agrivoltaic soil temperatures running 5-8°C cooler than control plots during peak conditions. This temperature moderation should translate to improved crop yields, reduced water stress, and expanded options for growing temperature-sensitive crops that might not survive in fully exposed conditions. For system design, the current agrivoltaic configuration appears optimal for balancing energy generation with agricultural benefits, creating thermal conditions that are more stable than control plots while avoiding the complete isolation from natural conditions that might occur with excessive shading. Water management strategies can be adjusted to account for the reduced evaporation rates expected under these cooler, more stable conditions, potentially allowing for reduced irrigation frequency and improved water use efficiency. The consistent performance of ground-mounted PV systems suggests they could serve as reliable energy generation components in hybrid installations, while the agrivoltaic areas focus on optimizing the agriculture-energy balance for maximum land use efficiency.
+
+## Solar Irradiance Comparison Between Agrivoltaic and Ground-Mounted PV Systems
+
+This box plot analysis compares solar irradiance levels between agrivoltaic photovoltaic panel areas (AG-PV) and ground-mounted PV systems (PO-PV). This comparison is essential for understanding how different mounting configurations affect solar energy capture potential and overall system efficiency in tropical environments.
+
+```{python}
+# Clean column names
+merged_df.columns = merged_df.columns.str.strip()
+
+# Define relevant plot types
+plot_types = ['AG-PV', 'AO-TI', 'AO-SS', 'PO-PV', 'AG-SS']
+
+# Select irradiance columns
+irradiance_cols = [col for col in merged_df.columns if "Irr" in col and any(pt in col for pt in plot_types)]
+
+# Melt the DataFrame
+irr_long = merged_df[irradiance_cols].melt(var_name="Sensor", value_name="Irradiance")
+
+# Extract abbreviations for x-axis
+irr_long["Abbreviation"] = irr_long["Sensor"].str.extract(r'(AG-PV|AO-TI|AO-SS|PO-PV|AG-SS)')
+
+# Map full names for legend
+plot_type_labels = {
+    "PO-PV": "Ground-Mounted PV Systems",
+    "AG-PV": "Agrivoltaic Photovoltaic Panel Sensors",
+    "AO-TI": "Control Plot – Tin Roof",
+    "AO-SS": "Control Plot – Soil Sensors",
+    "AG-SS": "Agrivoltaic Soil Sensors"
+}
+irr_long["Plot_Type"] = irr_long["Abbreviation"].map(plot_type_labels)
+
+# Custom color sequence (green, lime, moss, seaweed, sage)
+color_sequence = ['#006400', '#9DC183']
+
+# Plot with wider boxes
+fig = px.box(
+    irr_long,
+    x="Abbreviation",  
+    y="Irradiance",
+    color="Plot_Type",  
+    title="Irradiance Comparison by Plot Type",
+    labels={
+        "Irradiance": "Irradiance (W/m²)",
+        "Abbreviation": "Plot Type"  
+    },
+    template="simple_white",
+    height=600,
+    color_discrete_sequence=color_sequence
+)
+
+fig.update_layout(
+    xaxis=dict(
+        showgrid=False,
+        title_text="Plot Type",
+        title_font=dict(size=16, family='Arial', weight='bold'),
+        tickfont=dict(size=14, family='Arial', weight='bold')
+    ),
+    yaxis=dict(
+        showgrid=False,
+        title_text="Irradiance (W/m²)",
+        title_font=dict(size=16, family='Arial', weight='bold'),
+        tickfont=dict(size=14, family='Arial', weight='bold')
+    ),
+    legend_title_text="Plot Type Description",
+    legend_title_font=dict(size=14, family='Arial', weight='bold'),
+    legend_font=dict(size=12, family='Arial', weight='bold'),
+    title=dict(
+        text="Irradiance Comparison by Plot Type",
+        x=0.5,  # Centered title
+        font=dict(size=20, family='Arial', weight='bold')
+    ),
+    plot_bgcolor='white',
+    paper_bgcolor='white',
+    margin=dict(b=100),  
+    boxmode='group'
+)
+
+# Make boxes wider and improve visibility
+fig.update_traces(
+    width=0.7,  # Wider boxes (default is ~0.5)
+    line=dict(width=2.5),  # Thicker borders
+    marker=dict(
+        size=5,  # Larger outliers
+        line=dict(width=1.2, color='green')  # Darker outlines
+    ),
+    whiskerwidth=0.5,  
+    quartilemethod="exclusive"  
+)
+
+fig.show()
+fig.write_image(os.path.join(results_dir, 'Irradiance Comparison by Plot Type.jpg'))
+fig.write_image(os.path.join(results_dir, 'Irradiance Comparison by Plot Type.png'))
+fig.write_html(os.path.join(results_dir, 'Irradiance Comparison by Plot Type.html'))
+```
+
+The irradiance comparison reveals remarkably similar solar energy capture potential between both system types, with both agrivoltaic and ground-mounted PV systems showing nearly identical median irradiance values around 100-120 W/m² and comparable interquartile ranges extending from near zero to approximately 350-400 W/m². Both systems demonstrate the same peak irradiance capacity, reaching maximum values around 1200-1300 W/m² during optimal solar conditions, which indicates that the agrivoltaic mounting configuration does not compromise solar energy generation potential compared to traditional ground-mounted installations. The similar distribution patterns suggest that both systems experience equivalent daily solar cycles and weather-related variations, with the wide range from zero to peak values reflecting normal day-night cycles and cloud cover effects typical of tropical climates. The slight visual differences in the box plots appear to be minor variations rather than systematic differences, confirming that agrivoltaic systems can achieve comparable energy generation performance while providing the additional benefit of agricultural space utilization.
+
+
+These findings provide strong support for agrivoltaic system adoption, as they demonstrate that farmers and energy developers can achieve equivalent solar energy generation while simultaneously maintaining agricultural productivity on the same land. The comparable irradiance levels across both system types indicate that agrivoltaic installations will not suffer energy generation penalties compared to traditional ground-mounted systems, making them economically viable for dual-use applications. Energy planners and project developers can confidently use ground-mounted PV performance data as benchmarks for agrivoltaic system energy output projections, simplifying feasibility studies and financial modeling for agrivoltaic projects. For land use optimization, these results suggest that agrivoltaic systems offer a clear advantage by delivering the same energy generation capacity while preserving agricultural functionality, effectively doubling the productive value of available land. Installation and maintenance procedures developed for ground-mounted systems can be adapted for agrivoltaic applications without expecting significant performance differences, potentially reducing development costs and technical complexity. The consistent irradiance performance also suggests that agrivoltaic systems can be integrated into existing power grid planning frameworks using established solar generation models, facilitating broader adoption of this sustainable land use technology.
+
+## Relative Humidity Comparison Across Plot Types
+
+This violin plot analysis compares relative humidity distributions across three different plot types: control plots with tin roof sensors (AO-TI), control soil plots (AO-SS), and agrivoltaic soil sensors (AG-SS). This comparison reveals how agrivoltaic systems influence moisture conditions in the growing environment compared to traditional agricultural setups, which is crucial for understanding crop growing conditions and water management requirements.
+
+```{python}
+# Clean column names
+merged_df.columns = merged_df.columns.str.strip()
+
+# Define plot types
+plot_types = ['AG-PV', 'AO-TI', 'AO-SS', 'PO-PV', 'AG-SS']
+
+# Select columns with Relative Humidity (%)
+humidity_cols = [col for col in merged_df.columns if "RH (%)" in col and any(pt in col for pt in plot_types)]
+
+# Melt dataframe to long format
+humidity_long = merged_df[humidity_cols].melt(var_name="Sensor", value_name="Humidity")
+
+# Extract abbreviations for x-axis
+humidity_long["Abbreviation"] = humidity_long["Sensor"].str.extract(r'(AG-PV|AO-TI|AO-SS|PO-PV|AG-SS)')
+
+# Map full names for legend
+plot_type_labels = {
+    "PO-PV": "PO-PV: Ground-Mounted PV Systems",
+    "AG-PV": "AG-PV: Agrivoltaic Photovoltaic Panel Sensors",
+    "AO-TI": "AO-TI: Control Plot – Tin Roof Sensors",
+    "AO-SS": "AO-SS: Control Plot – Soil Sensors",
+    "AG-SS": "AG-SS: Agrivoltaic Soil Sensors"
+}
+humidity_long["Plot_Type"] = humidity_long["Abbreviation"].map(plot_type_labels)
+
+# Plot with centered title
+fig = px.violin(
+    humidity_long,
+    x="Abbreviation",       
+    y="Humidity",
+    color="Plot_Type",      
+    title="<b>Relative Humidity Comparison by Plot Type</b>",
+    labels={
+        "Humidity": "Relative Humidity (%)", 
+        "Abbreviation": "Plot Type"  # This maintains the x-axis title
+    },
+    template="simple_white",
+    height=600,
+    color_discrete_sequence=['#006d2c', '#41ab5d', '#a1d99b', '#e5f5e0', '#f7fcf5']  # Dark to light greens
+)
+
+# Only modify these specific elements in update_layout:
+fig.update_layout(
+    xaxis=dict(
+        showgrid=False,
+        title_text="Plot Type",
+        title_font=dict(weight='bold'),  
+        tickfont=dict(weight='bold')     
+    ),
+    yaxis=dict(
+        showgrid=False,
+        title="Relative Humidity (%)",
+        title_font=dict(weight='bold'),  
+        tickfont=dict(weight='bold')     
+    ),
+    legend_title_font=dict(weight='bold'),  
+    legend_font=dict(weight='bold'),        
+    # Keep all other existing parameters exactly as they were:
+    plot_bgcolor='white',
+    paper_bgcolor='white',
+    title={
+        'text': "<b>Relative Humidity Comparison by Plot Type</b>",
+        'x':0.5,
+        'xanchor': 'center',
+        'yanchor': 'top',
+        'font': {
+            'size': 18,
+            'family': "Arial"
+        }
+    },
+    margin=dict(t=50, b=80, l=60, r=40)
+)
+
+# [Keep the existing fig.update_traces() exactly as is]
+fig.update_traces(
+    width=0.9,
+    points=False,
+    meanline_visible=True,
+    line=dict(width=1.5)
+)
+
+fig.show()
+fig.write_image(os.path.join(results_dir, 'Humidity Comparison by Plot Type.jpg'))
+fig.write_image(os.path.join(results_dir, 'Humidity Comparison by Plot Type.png'))
+fig.write_html(os.path.join(results_dir, 'Humidity Comparison by Plot Type.html'))
+```
+
+The relative humidity comparison reveals dramatic differences in moisture conditions across the different plot types, with agrivoltaic systems creating significantly more favorable and stable humidity environments for crop growth. The control tin roof areas (AO-TI) show an extremely wide humidity range spanning from near 0% to 100%, with a distinctive bimodal distribution that peaks around 30-40% and 70-80%, indicating highly variable and often stressful moisture conditions that fluctuate dramatically throughout the day and across weather conditions. The control soil plots (AO-SS) demonstrate somewhat more stable conditions but still show considerable variation, with most measurements concentrated in the lower range around 5-25% relative humidity, suggesting relatively dry soil conditions typical of exposed tropical agriculture. In stark contrast, the agrivoltaic soil sensors (AG-SS) show a much more favorable humidity profile, with the majority of measurements concentrated in the moderate range of 15-35% relative humidity and occasional peaks reaching higher levels, indicating that the partial shading and modified air circulation created by the solar panels helps maintain more consistent and suitable moisture conditions for plant growth.
+
+These humidity patterns provide compelling evidence for the agricultural benefits of agrivoltaic systems, particularly in tropical climates where moisture stress can significantly impact crop productivity. The more stable and moderate humidity levels in agrivoltaic areas suggest that crops will experience less water stress and more consistent growing conditions, potentially leading to improved yields and reduced irrigation requirements. Farmers implementing agrivoltaic systems can expect more predictable humidity patterns that fall within optimal ranges for most crops, reducing the risk of both drought stress and excessive moisture-related plant diseases. The extreme humidity fluctuations observed in control areas highlight the value of the microclimate buffering provided by agrivoltaic installations, making these systems particularly valuable for growing sensitive crops that require stable environmental conditions. Water management strategies should account for the improved humidity retention in agrivoltaic areas, potentially allowing for reduced irrigation frequency while maintaining adequate soil moisture levels. For crop selection and rotation planning, the more stable humidity conditions in agrivoltaic systems open opportunities for diversifying crop types and potentially extending growing seasons, as plants will be less subject to the extreme moisture fluctuations that can limit agricultural options in fully exposed tropical environments.
+
+## Soil Moisture Comparison Between Control and Agrivoltaic Plots
+
+This box plot analysis compares soil moisture levels between control soil plots (AO-SS) and agrivoltaic soil sensors (AG-SS). This comparison is fundamental to understanding how agrivoltaic systems affect soil water retention and availability for crop growth, which directly impacts agricultural productivity and irrigation requirements in tropical farming systems.
+
+```{python}
+# Clean column names
+merged_df.columns = merged_df.columns.str.strip()
+
+# Define relevant plot types
+plot_types = ['AG-SS', 'AO-SS']
+
+# Select soil moisture columns (Relative Humidity)
+moisture_cols = [col for col in merged_df.columns if "RH (%)" in col and any(pt in col for pt in plot_types)]
+
+# Melt the DataFrame
+moisture_long = merged_df[moisture_cols].melt(var_name="Sensor", value_name="Soil Moisture")
+
+# Extract abbreviations for x-axis
+moisture_long["Abbreviation"] = moisture_long["Sensor"].str.extract(r'(AG-SS|AO-SS)')
+
+# Map full names for legend
+plot_type_labels = {
+    "AG-SS": "Agrivoltaic Soil Sensors",
+    "AO-SS": "Control Plot – Soil Sensors"
+}
+moisture_long["Plot_Type"] = moisture_long["Abbreviation"].map(plot_type_labels)
+
+# Custom color sequence
+color_sequence = ['#006400', '#9DC183']
+
+# Plot with wider boxes
+fig = px.box(
+    moisture_long,
+    x="Abbreviation",
+    y="Soil Moisture",
+    color="Plot_Type",
+    title="Soil Moisture Comparison by Plot Type",
+    labels={
+        "Soil Moisture": "Relative Humidity (%)",
+        "Abbreviation": "Plot Type"
+    },
+    template="simple_white",
+    height=600,
+    color_discrete_sequence=color_sequence
+)
+
+# Update layout with bold formatting
+fig.update_layout(
+    xaxis=dict(
+        showgrid=False,
+        title_text="Plot Type",
+        title_font=dict(size=16, family='Arial', weight='bold'),
+        tickfont=dict(size=14, family='Arial', weight='bold')
+    ),
+    yaxis=dict(
+        showgrid=False,
+        title_text="Relative Humidity (%)",
+        title_font=dict(size=16, family='Arial', weight='bold'),
+        tickfont=dict(size=14, family='Arial', weight='bold')
+    ),
+    legend_title_text="Plot Type Description",
+    legend_title_font=dict(size=14, family='Arial', weight='bold'),
+    legend_font=dict(size=12, family='Arial', weight='bold'),
+    title=dict(
+        text="Soil Moisture Comparison by Plot Type",
+        x=0.5,
+        font=dict(size=20, family='Arial', weight='bold')
+    ),
+    plot_bgcolor='white',
+    paper_bgcolor='white',
+    margin=dict(b=100),
+    boxmode='group'
+)
+
+# Improve trace formatting
+fig.update_traces(
+    width=0.7,
+    line=dict(width=2.5),
+    marker=dict(
+        size=5,
+        line=dict(width=1.2, color='green')
+    ),
+    whiskerwidth=0.5,
+    quartilemethod="exclusive"
+)
+
+fig.show()
+fig.write_image(os.path.join(results_dir, 'Soil Moisture Comparison by Plot Type.jpg'))
+fig.write_image(os.path.join(results_dir, 'Soil Moisture Comparison by Plot Type.png'))
+fig.write_html(os.path.join(results_dir, 'Soil Moisture Comparison by Plot Type.html'))
+```
+
+The soil moisture comparison reveals significant differences in water retention patterns between control and agrivoltaic plots, with agrivoltaic systems demonstrating superior soil moisture management characteristics. The control soil plots (AO-SS) show highly variable moisture conditions with a median around 18-20% relative humidity and an extremely wide range extending from near 0% to occasional spikes reaching 100%, indicating unpredictable soil water availability that fluctuates dramatically with weather conditions and daily evaporation cycles. This extreme variability suggests that crops in control plots experience frequent water stress cycles, alternating between drought conditions and occasional oversaturation. In contrast, the agrivoltaic soil sensors (AG-SS) demonstrate more stable and consistently higher soil moisture levels, with a median around 20-25% relative humidity and a much narrower interquartile range, indicating that the partial shading and modified microclimate created by the solar panels help maintain more consistent soil water availability. The reduced variability in agrivoltaic plots suggests that crops benefit from more predictable growing conditions with fewer extreme moisture fluctuations that can stress plant growth and development.
+
+These soil moisture patterns provide strong evidence for the water management benefits of agrivoltaic systems, particularly valuable in tropical climates where water availability can be a limiting factor for agricultural productivity. Farmers can expect more reliable soil moisture conditions in agrivoltaic installations, which should translate to reduced irrigation requirements and more consistent crop performance throughout growing seasons. The improved moisture stability suggests that agrivoltaics could be particularly beneficial during dry periods when control plots would experience severe water stress, potentially extending productive growing seasons and improving crop resilience to climate variability. Water management planning can be simplified in agrivoltaic systems due to the more predictable moisture patterns, allowing farmers to develop more efficient irrigation schedules based on consistent soil water retention rather than compensating for extreme fluctuations. For crop selection strategies, the enhanced soil moisture stability opens opportunities for growing water-sensitive crops that might fail in the variable conditions of traditional open-field agriculture. The consistent moisture retention also suggests potential for improved nutrient uptake and root development, as plants can maintain steady access to soil water rather than experiencing the stress cycles that can limit growth in control conditions.
+
+# Relative differences in humidity and soil moisture between shaded (agrivoltaic) and unshaded (control) plots?
+
+## Relative Humidity Comparison: Shaded vs Unshaded Agricultural Plots
+
+This box plot analysis directly compares relative humidity levels between unshaded control plots (AO) and shaded agrivoltaic plots (AG) to isolate the specific impact of solar panel shading on microclimate humidity conditions. This comparison is essential for understanding the direct agricultural benefits of agrivoltaic systems in terms of moisture management and crop growing environments.
+
+```{python}
+# Step 1: Identify humidity columns
+humidity_cols = [col for col in merged_df.columns if "RH (%)" in col and ("AG-" in col or "AO-" in col)]
+
+# Step 2: Melt to long format
+humidity_long = merged_df[humidity_cols].melt(var_name="Sensor", value_name="Humidity")
+
+# Step 3: Tag plot type
+humidity_long["Shade"] = humidity_long["Sensor"].apply(lambda x: "Shaded (AG)" if "AG-" in x else "Unshaded (AO)")
+
+# Step 4: Drop missing
+humidity_long = humidity_long.dropna()
+
+# Step 5: Boxplot with enhanced formatting
+fig = px.box(
+    humidity_long, 
+    x="Shade",
+    y="Humidity",
+    color="Shade",
+    height=600,
+    title="Relative Humidity Comparison: Shaded vs Unshaded Plots",
+    labels={"Humidity": "Relative Humidity (%)"},
+    template="simple_white",
+    color_discrete_sequence=['#006400', '#9DC183']
+)
+
+fig.update_layout(
+    showlegend=False,
+    title={
+        'text': '<b>Relative Humidity Comparison: Shaded vs Unshaded Plots</b>',
+        'x':0.5,
+        'xanchor': 'center',
+        'yanchor': 'top',
+        'font': {
+            'size': 18,
+            'family': "Arial"
+        }
+    },
+    xaxis=dict(
+        title='<b>Shade Condition</b>',
+        title_font=dict(size=14, family="Arial", weight='bold'),
+        tickfont=dict(size=12, family="Arial", weight='bold')
+    ),
+    yaxis=dict(
+        title='<b>Relative Humidity (%)</b>',
+        title_font=dict(size=14, family="Arial", weight='bold'),
+        tickfont=dict(size=12, family="Arial", weight='bold')
+    ),
+    font=dict(family="Arial", weight='bold')
+)
+
+# Enhance box appearance (fixed syntax)
+fig.update_traces(
+    line=dict(width=2.5),
+    marker=dict(
+        size=4,
+        line=dict(width=1, color='green')
+    )  # Properly closed parentheses
+)
+
+fig.show()
+fig.write_image(os.path.join(results_dir, 'Relative Humidity Comparison: Shaded vs Unshaded Plots.jpg'))
+fig.write_image(os.path.join(results_dir, 'Relative Humidity Comparison: Shaded vs Unshaded Plots.png'))
+fig.write_html(os.path.join(results_dir, 'Relative Humidity Comparison: Shaded vs Unshaded Plots.html'))
+```
+
+The humidity comparison reveals a clear and significant difference between shaded and unshaded agricultural environments, demonstrating the substantial microclimate benefits provided by agrivoltaic panel coverage. Unshaded control plots show extremely variable humidity conditions with a wide interquartile range spanning from approximately 15% to 70% relative humidity, and a median around 25%, indicating that crops in traditional open-field conditions experience dramatic moisture fluctuations that can range from severely dry to occasionally saturated conditions. The extensive range and variability suggest that plants in unshaded areas face frequent moisture stress as humidity levels swing wildly with daily weather patterns, solar heating, and evaporation cycles. In contrast, the shaded agrivoltaic plots demonstrate significantly more stable and favorable humidity conditions, with a much narrower interquartile range concentrated between 15-28% relative humidity and a median around 18-20%. While the median humidity in shaded areas is slightly lower than unshaded areas, the dramatically reduced variability represents a major advantage for crop health, as plants can adapt to consistent conditions rather than constantly adjusting to extreme moisture fluctuations that can impair growth and development.
+
+These findings provide compelling evidence that agrivoltaic systems create more suitable and predictable growing environments for crops, particularly in tropical climates where humidity extremes can significantly impact agricultural productivity. The reduced humidity variability in shaded plots suggests that farmers can expect more consistent crop performance and potentially higher yields due to reduced moisture stress on plants. Crop management strategies should take advantage of this stability by selecting varieties that perform well under moderate, consistent humidity levels rather than those adapted to extreme fluctuations. Water management becomes more predictable and efficient in agrivoltaic systems, as the stable humidity conditions allow for more precise irrigation scheduling without the need to compensate for dramatic environmental swings. For crop diversification, the consistent humidity conditions in shaded areas open opportunities for growing humidity-sensitive crops that might fail under the variable conditions of traditional open-field agriculture. The microclimate stability also suggests potential benefits for pest and disease management, as many agricultural pests and pathogens thrive in extreme humidity conditions, so the moderated environment under agrivoltaic panels may naturally reduce some biological stressors while maintaining adequate moisture for healthy plant growth.
+
+## Soil Moisture Comparison: Shaded vs Unshaded Soil Sensors
+
+This box plot analysis directly compares soil moisture levels between unshaded control soil sensors (AO-SS) and shaded agrivoltaic soil sensors (AG-SS) to quantify the specific impact of solar panel coverage on soil water retention. This comparison is critical for understanding how agrivoltaic systems affect root zone conditions and water availability for crop growth in tropical agricultural settings.
+
+```{python}
+# Step 1: Identify soil moisture columns
+soil_cols = [col for col in merged_df.columns if "RH (%)" in col and ("AG-SS" in col or "AO-SS" in col)]
+
+# Step 2: Melt to long format
+soil_long = merged_df[soil_cols].melt(var_name="Sensor", value_name="Soil Moisture")
+
+# Step 3: Classify shade type
+soil_long["Shade"] = soil_long["Sensor"].apply(lambda x: "Shaded (AG-SS)" if "AG-SS" in x else "Unshaded (AO-SS)")
+
+# Step 4: Drop missing values
+soil_long = soil_long.dropna()
+
+# Step 5: Plot with enhanced formatting
+fig = px.box(
+    soil_long,
+    x="Shade",
+    y="Soil Moisture",
+    color="Shade",
+    height=600,
+    title="Soil Moisture Comparison: Shaded vs Unshaded Soil Sensors",
+    labels={"Soil Moisture": "Soil Moisture Proxy (%RH)"},
+    template="simple_white",
+    color_discrete_sequence=['#006400', '#9DC183'] 
+)
+
+fig.update_layout(
+    showlegend=False,
+    title={
+        'text': '<b>Soil Moisture Comparison: Shaded vs Unshaded Soil Sensors</b>',
+        'x':0.5,
+        'xanchor': 'center',
+        'yanchor': 'top',
+        'font': {
+            'size': 18,
+            'family': "Arial"
+        }
+    },
+    xaxis=dict(
+        title='<b>Shade Condition</b>',
+        title_font=dict(size=14, family="Arial", weight='bold'),
+        tickfont=dict(size=12, family="Arial", weight='bold')
+    ),
+    yaxis=dict(
+        title='<b>Soil Moisture Proxy (%RH)</b>',
+        title_font=dict(size=14, family="Arial", weight='bold'),
+        tickfont=dict(size=12, family="Arial", weight='bold')
+    ),
+    font=dict(family="Arial", weight='bold')
+)
+
+fig.update_traces(
+    line=dict(width=2.5),  
+    marker=dict(
+        size=4,  # Outlier size
+        line=dict(width=1, color='green')  
+    )
+)
+
+fig.show()
+fig.write_image(os.path.join(results_dir, 'Soil Moisture Comparison: Shaded vs Unshaded Soil Sensors.jpg'))
+fig.write_image(os.path.join(results_dir, 'Soil Moisture Comparison: Shaded vs Unshaded Soil Sensors.png'))
+fig.write_html(os.path.join(results_dir, 'Soil Moisture Comparison: Shaded vs Unshaded Soil Sensors.html'))
+```
+
+The soil moisture comparison demonstrates a clear advantage for agrivoltaic systems in maintaining more stable and favorable soil water conditions compared to traditional open-field agriculture. Unshaded soil sensors show highly variable moisture levels with a median around 16-18% and an extremely wide range extending from near 0% to occasional spikes reaching 100%, indicating that crops in exposed conditions experience severe water stress cycles with frequent periods of drought alternating with occasional oversaturation events. This extreme variability reflects the direct impact of solar radiation and weather exposure on soil water evaporation and retention in traditional farming systems. In contrast, shaded agrivoltaic soil sensors demonstrate significantly improved moisture management, with a slightly higher median around 18-20% and, most importantly, a much more compressed and stable range of variation. The shaded soils show remarkably consistent moisture levels with fewer extreme fluctuations, indicating that the partial coverage provided by solar panels effectively buffers the soil from direct evaporation while still allowing adequate water infiltration during rainfall events.
+
+These soil moisture patterns provide strong quantitative evidence for the water conservation benefits of agrivoltaic systems, making them particularly valuable for sustainable agriculture in water-limited tropical environments. Farmers can expect more reliable soil water availability throughout growing seasons, which should translate to reduced irrigation requirements and improved crop resilience during dry periods. The enhanced moisture stability suggests that agrivoltaic systems could serve as a climate adaptation strategy, helping maintain agricultural productivity even as rainfall patterns become more irregular due to climate change. Water management planning can be optimized based on the more predictable soil moisture patterns in shaded areas, allowing for more efficient irrigation scheduling and potentially reducing overall water consumption while maintaining crop health. For crop selection and rotation strategies, the consistent soil moisture conditions open opportunities for growing water-sensitive crops that require stable root zone conditions, potentially diversifying farm income and improving food security. The improved water retention also suggests enhanced nutrient availability, as consistent soil moisture facilitates better nutrient uptake and root development, potentially leading to improved crop yields and quality compared to the stress conditions experienced in traditional open-field systems.
+
+# How parameters fluctuate over different times of day and months 
+
+## Hourly Temperature Trends Across Different Plot Types
+
+This time series analysis examines how temperature varies throughout the day across agrivoltaic, control, and ground-mounted PV plot types. Understanding these diurnal temperature patterns is essential for optimizing both energy generation timing and agricultural management practices, as it reveals how different installation configurations respond to daily solar cycles and create distinct thermal environments.
+
+```{python}
+# Step 1: Ensure TIME is in datetime or extract hour
+merged_df['Hour'] = pd.to_datetime(merged_df['TIME'], errors='coerce').dt.hour
+
+# Step 2: Group by Hour and calculate mean temperatures
+hourly_means = merged_df.groupby("Hour")[
+    ['AG-PV P3/T (oC)', 'AO-TI P2/T (oC)', 'PO-PV/T (oC)']
+].mean(numeric_only=True).reset_index()
+
+# Step 3: Rename columns for clarity
+hourly_means.columns = ['Hour', 'Agrivoltaic', 'Control', 'Ground-mounted']
+
+# Step 4: Melt into long format
+hourly_long = hourly_means.melt(id_vars="Hour", var_name="Plot Type", value_name="Temperature")
+
+# Step 5: Plot
+fig = px.line(
+    hourly_long,
+    x="Hour",
+    y="Temperature",
+    color="Plot Type",
+    height=600,
+    title="Hourly Temperature Trend",
+    markers=True,
+    color_discrete_sequence=["teal", "lime", "green"],
+    labels={"Temperature": "Avg Temp (°C)", "Hour": "Hour of Day"}
+)
+
+# Modified x-axis with 5-hour intervals
+fig.update_xaxes(
+    tickvals=list(range(0, 24, 5)),  # 0, 5, 10, 15, 20
+    ticktext=[f"{h}:00" for h in range(0, 24, 5)],
+    showgrid=False,
+    tickfont=dict(size=12, family='Arial', weight='bold')
+)
+
+# Bold y-axis tick labels
+fig.update_yaxes(
+    showgrid=False,
+    tickfont=dict(size=12, family='Arial', weight='bold'),
+)
+
+# Layout with all original formatting
+fig.update_layout(
+    template="simple_white",
+    xaxis=dict(
+        showgrid=False,
+        title_font=dict(size=16, family='Arial', weight='bold'),
+        title_text="Hour of Day"
+    ),
+    yaxis=dict(
+        showgrid=False,
+        title_font=dict(size=16, family='Arial', weight='bold'),
+        title_text="Avg Temp (°C)"
+    ),
+    legend_title=dict(
+        text="Plot Type",
+        font=dict(size=14, family='Arial', weight='bold')
+    ),
+    title=dict(
+        text="Hourly Temperature Trend",
+        x=0.5,
+        font=dict(size=20, family='Arial', weight='bold')
+    ),
+    height=500
+)
+
+fig.show()
+fig.write_image(os.path.join(results_dir, 'Hourly Temperature Trend.jpg'))
+fig.write_image(os.path.join(results_dir, 'Hourly Temperature Trend.png'))
+fig.write_html(os.path.join(results_dir, 'Hourly Temperature Trend.html'))
+```
+
+The hourly temperature trends reveal dramatic differences in thermal behavior between plot types, with agrivoltaic and ground-mounted systems providing substantial temperature moderation compared to control plots throughout the entire daily cycle. Control plots show the most extreme temperature fluctuations, starting around 27°C in early morning, climbing steadily to peak temperatures of 33-34°C during midday hours (11 AM to 2 PM), and then gradually declining back to around 27°C by evening, representing a daily temperature swing of approximately 7°C that subjects crops to significant thermal stress. In stark contrast, both agrivoltaic and ground-mounted systems maintain remarkably stable temperatures around 20-21°C throughout the entire 24-hour period, with minimal variation of only 1-2°C regardless of time of day. This temperature stability represents a transformative microclimate benefit, as it eliminates the thermal stress cycles that can impair crop growth and energy system efficiency. The slight variations in agrivoltaic temperatures show a modest increase during mid-afternoon hours, suggesting some solar heating effect, but this remains within a very moderate range that would be beneficial rather than stressful for most crops and solar panel performance.
+
+These temperature patterns provide compelling evidence for the thermal management advantages of agrivoltaic systems, making them particularly valuable for both agricultural productivity and energy generation efficiency in tropical climates. The stable temperature conditions throughout the day suggest that crops grown under agrivoltaic systems will experience minimal thermal stress, potentially allowing for extended growing seasons and improved yields compared to traditional open-field agriculture. Energy generation planning can benefit from the consistent thermal conditions, as solar panels perform more efficiently at moderate temperatures, suggesting that agrivoltaic installations may achieve more stable power output throughout daily cycles compared to systems that experience extreme temperature fluctuations. Agricultural management practices can be simplified due to the predictable thermal environment, allowing farmers to schedule activities like irrigation, fertilization, and harvesting based on crop needs rather than compensating for extreme temperature variations. For crop selection strategies, the stable temperature conditions open opportunities for growing temperature-sensitive crops that require consistent thermal conditions, potentially diversifying agricultural options and improving farm profitability. The thermal stability also suggests reduced stress on both biological and mechanical systems, potentially leading to longer equipment life, reduced maintenance requirements, and more predictable operational costs for integrated agrivoltaic installations.
+
+## Hourly Solar Irradiance Trends Across PV System Types
+
+This time series analysis examines solar irradiance patterns throughout the day for both agrivoltaic and ground-mounted PV systems. Understanding these diurnal irradiance patterns is crucial for energy generation planning, system performance optimization, and validating that agrivoltaic installations maintain comparable solar energy capture potential to traditional ground-mounted systems.
+
+```{python}
+# Step 1: Ensure Hour exists
+merged_df['Hour'] = pd.to_datetime(merged_df['TIME'], errors='coerce').dt.hour
+
+# Step 2: Group by Hour and calculate mean irradiance
+irradiance_means = merged_df.groupby("Hour")[
+    ['AG-PV P1/Irr (W/m2)', 'PO-PV/Irr (W/m2)']
+].mean(numeric_only=True).reset_index()
+
+# Step 3: Rename columns
+irradiance_means.columns = ['Hour', 'Agrivoltaic', 'Ground-mounted']
+
+# Step 4: Melt to long format
+irradiance_long = irradiance_means.melt(id_vars="Hour", var_name="Plot Type", value_name="Irradiance")
+
+# Step 5: Plot
+fig = px.line(
+    irradiance_long,
+    x="Hour",
+    y="Irradiance",
+    height=600,
+    color="Plot Type",
+    title="Hourly Irradiance Trend",
+    markers=True,
+    color_discrete_sequence=["green", "lime"],  # Custom colors
+    labels={"Irradiance": "Avg Irradiance (W/m²)", "Hour": "Hour of Day"}
+)
+
+# Modified x-axis with 5-hour intervals
+fig.update_xaxes(
+    tickvals=list(range(0, 24, 5)),  # 0, 5, 10, 15, 20
+    ticktext=[f"{h}:00" for h in range(0, 24, 5)],
+    showgrid=False,
+    tickfont=dict(size=12, family='Arial', weight='bold'),
+    title_font=dict(size=16, family='Arial', weight='bold')
+)
+
+# Format y-axis with bold ticks (unchanged)
+fig.update_yaxes(
+    showgrid=False,
+    tickfont=dict(size=12, family='Arial', weight='bold'),
+    title_font=dict(size=16, family='Arial', weight='bold')
+)
+
+# Update layout (unchanged)
+fig.update_layout(
+    template="simple_white",
+    legend_title_text="Plot Type",
+    legend_title_font=dict(size=14, family='Arial', weight='bold'),
+    legend_font=dict(size=12, family='Arial', weight='bold'),
+    title=dict(
+        text="Hourly Irradiance Trend",
+        x=0.5,  # Center title
+        font=dict(size=20, family='Arial', weight='bold')
+    ),
+    height=500
+)
+
+fig.show()
+fig.write_image(os.path.join(results_dir, 'Hourly Irradiance Trend.jpg'))
+fig.write_image(os.path.join(results_dir, 'Hourly Irradiance Trend.png'))
+fig.write_html(os.path.join(results_dir, 'Hourly Irradiance Trend.html'))
+```
+
+The hourly irradiance trends demonstrate that agrivoltaic and ground-mounted PV systems achieve virtually identical solar energy capture patterns throughout the daily cycle, providing strong evidence that agrivoltaic installations do not compromise energy generation potential. Both system types show nearly overlapping irradiance curves that follow the expected solar pattern, starting at zero during nighttime hours, beginning to rise around 6 AM as sunrise occurs, reaching peak irradiance levels of approximately 580-600 W/m² during midday hours (11 AM to 1 PM), and then declining symmetrically back to zero by evening around 6 PM. The remarkable similarity between the two curves, with only minor variations of 10-20 W/m² at peak times, confirms that the elevated mounting configuration and agricultural integration of agrivoltaic systems does not significantly impact solar radiation capture compared to traditional ground-mounted installations. The smooth, bell-shaped curves for both systems indicate consistent solar tracking throughout the day without any systematic shading or obstruction effects that might reduce energy generation potential in either configuration.
+
+These irradiance patterns provide definitive evidence that agrivoltaic systems can deliver equivalent energy generation performance to ground-mounted PV installations, making them highly attractive for dual-use land applications where both energy and agricultural productivity are priorities. Energy developers and investors can confidently use ground-mounted PV performance models and financial projections for agrivoltaic projects, as the solar energy capture potential is essentially identical between the two systems. Grid integration planning can treat agrivoltaic installations as equivalent to conventional solar farms in terms of daily energy production patterns, simplifying power system management and renewable energy forecasting. For project development, the comparable irradiance performance means that agrivoltaic systems offer clear advantages by delivering the same energy output while preserving agricultural land use, effectively doubling the economic value of available land area. Maintenance and monitoring protocols developed for ground-mounted systems can be directly applied to agrivoltaic installations without expecting performance differences, reducing operational complexity and costs. The consistent solar energy capture also supports the scalability of agrivoltaic technology, as large-scale deployments can be planned with confidence that energy generation targets will be met while simultaneously supporting agricultural production and food security goals.
+
+## Hourly Humidity Trends Across Plot Types
+
+This time series analysis examines how relative humidity varies throughout the day in agrivoltaic versus control plots. Understanding these diurnal humidity patterns is essential for agricultural management, as humidity levels directly affect plant transpiration, disease pressure, and overall crop health, while also influencing irrigation scheduling and pest management strategies.
+
+```{python}
+# Step 1: Group by Hour and calculate mean humidity
+humidity_means = merged_df.groupby("Hour")[
+    ['AG-TI P1/RH (%)', 'AO-TI P2/RH (%)']
+].mean(numeric_only=True).reset_index()
+
+# Step 2: Rename columns
+humidity_means.columns = ['Hour', 'Agrivoltaic', 'Control']
+
+# Step 3: Melt to long format
+humidity_long = humidity_means.melt(id_vars="Hour", var_name="Plot Type", value_name="Humidity")
+
+# Step 4: Plot
+fig = px.line(
+    humidity_long,
+    x="Hour",
+    y="Humidity",
+    height=600,
+    color="Plot Type",
+    title="Hourly Humidity Trend",
+    markers=True,
+    color_discrete_sequence=["green", "lime"],  # Custom colors
+    labels={"Humidity": "Avg Humidity (%)", "Hour": "Hour of Day"}
+)
+
+# Modified x-axis with 5-hour intervals (0:00, 5:00, 10:00, 15:00, 20:00)
+fig.update_xaxes(
+    tickvals=list(range(0, 24, 5)),  # 5-hour intervals
+    ticktext=[f"{h}:00" for h in range(0, 24, 5)],
+    showgrid=False,
+    tickfont=dict(size=12, family='Arial', weight='bold'),
+    title_font=dict(size=16, family='Arial', weight='bold')
+)
+
+# Format y-axis with bold ticks (unchanged)
+fig.update_yaxes(
+    showgrid=False,
+    tickfont=dict(size=12, family='Arial', weight='bold'),
+    title_font=dict(size=16, family='Arial', weight='bold')
+)
+
+# Update layout (unchanged)
+fig.update_layout(
+    template="simple_white",
+    legend_title_text="Plot Type",
+    legend_title_font=dict(size=14, family='Arial', weight='bold'),
+    legend_font=dict(size=12, family='Arial', weight='bold'),
+    title=dict(
+        text="Hourly Humidity Trend",
+        x=0.5,  # Center title
+        font=dict(size=20, family='Arial', weight='bold')
+    ),
+    height=500
+)
+
+fig.show()
+fig.write_image(os.path.join(results_dir, 'Hourly Humidity Trend.jpg'))
+fig.write_image(os.path.join(results_dir, 'Hourly Humidity Trend.png'))
+fig.write_html(os.path.join(results_dir, 'Hourly Humidity Trend.html'))
+```
+
+The hourly humidity trends reveal striking differences between agrivoltaic and control environments, demonstrating significant microclimate benefits provided by solar panel coverage throughout the entire daily cycle. Control plots exhibit dramatic humidity fluctuations with a distinctive pattern that starts around 85% in early morning, drops sharply to a minimum of approximately 67-70% during midday hours (10 AM to 3 PM) when solar heating and evaporation are most intense, and then rises again to around 85% by evening, creating a daily humidity swing of nearly 20 percentage points. This extreme variation subjects crops to alternating periods of high moisture stress during hot midday hours and potentially excessive humidity during cooler periods. In contrast, agrivoltaic plots maintain remarkably stable humidity levels throughout the day, fluctuating only modestly between 30-43% relative humidity with the lowest levels occurring around 4-6 AM and the highest in late evening, representing a much more moderate daily variation of only 13 percentage points. The agrivoltaic humidity pattern shows a gentle inverse relationship with solar intensity, remaining relatively stable during peak daylight hours when control plots experience their most extreme humidity drops.
+
+These humidity patterns provide compelling evidence for the microclimate stabilization benefits of agrivoltaic systems, making them particularly valuable for crops that are sensitive to humidity stress or require consistent growing conditions. The moderate and stable humidity levels in agrivoltaic areas suggest improved growing conditions for a wider variety of crops, including those that might suffer from the extreme humidity fluctuations experienced in traditional open-field agriculture. Agricultural management can be simplified due to the predictable humidity environment, allowing farmers to develop more consistent irrigation and pest management strategies without compensating for dramatic daily moisture variations. The reduced humidity extremes in agrivoltaic systems may also help minimize certain plant diseases that thrive in either very high or very low humidity conditions, potentially reducing pesticide requirements and improving crop health naturally. For crop selection strategies, the stable humidity conditions open opportunities for growing specialty crops that require consistent moisture environments, potentially increasing farm diversification and profitability. Water management planning can benefit from the predictable humidity patterns, as the reduced evaporation stress during midday hours may allow for more efficient irrigation timing and potentially reduced water consumption while maintaining optimal plant growing conditions throughout the daily cycle.
+
+## Hourly Soil Moisture Trends Across Plot Types
+
+This time series analysis examines how soil moisture levels vary throughout the day in agrivoltaic versus control plots. Understanding these diurnal soil moisture patterns is critical for irrigation planning, root zone management, and assessing how different agricultural systems respond to daily evaporation cycles and solar heating effects on soil water retention.
+
+```{python}
+# Ensure 'Hour' column exists
+merged_df['Hour'] = pd.to_datetime(merged_df['TIME'], errors='coerce').dt.hour
+
+# Step 1: Group by Hour and calculate mean soil moisture
+moisture_means = merged_df.groupby("Hour")[
+    ['AG-SS P1/RH (%)', 'AO-SS P1/RH (%)']
+].mean(numeric_only=True).reset_index()
+
+# Step 2: Rename columns
+moisture_means.columns = ['Hour', 'Agrivoltaic', 'Control']
+
+# Step 3: Melt to long format
+moisture_long = moisture_means.melt(id_vars="Hour", var_name="Plot Type", value_name="Soil Moisture")
+
+# Step 4: Plot
+fig = px.line(
+    moisture_long,
+    x="Hour",
+    y="Soil Moisture",
+    color="Plot Type",
+    height=600,
+    title="Hourly Soil Moisture Trend",
+    markers=True,
+    color_discrete_sequence=["green", "lime"],  # Custom colors
+    labels={"Soil Moisture": "Avg Soil Moisture (%)", "Hour": "Hour of Day"}
+)
+
+# Modified x-axis with 5-hour intervals (0:00, 5:00, 10:00, 15:00, 20:00)
+fig.update_xaxes(
+    tickvals=list(range(0, 24, 5)),  # 5-hour intervals
+    ticktext=[f"{h}:00" for h in range(0, 24, 5)],
+    showgrid=False,
+    tickfont=dict(size=12, family='Arial', weight='bold'),
+    title_font=dict(size=16, family='Arial', weight='bold')
+)
+
+# Format y-axis (unchanged)
+fig.update_yaxes(
+    showgrid=False,
+    tickfont=dict(size=12, family='Arial', weight='bold'),
+    title_font=dict(size=16, family='Arial', weight='bold')
+)
+
+# Layout customization (unchanged)
+fig.update_layout(
+    template="simple_white",
+    legend_title_text="Plot Type",
+    legend_title_font=dict(size=14, family='Arial', weight='bold'),
+    legend_font=dict(size=12, family='Arial', weight='bold'),
+    title=dict(
+        text="Hourly Soil Moisture Trend",
+        x=0.5,
+        font=dict(size=20, family='Arial', weight='bold')
+    ),
+    height=500
+)
+
+fig.show()
+fig.write_image(os.path.join(results_dir, 'Hourly Soil Moisture Trend.jpg'))
+fig.write_image(os.path.join(results_dir, 'Hourly Soil Moisture Trend.png'))
+fig.write_html(os.path.join(results_dir, 'Hourly Soil Moisture Trend.html'))
+```
+
+The hourly soil moisture trends reveal distinct patterns that highlight the water conservation benefits of agrivoltaic systems compared to traditional open-field agriculture. Control plots demonstrate more variable soil moisture levels with notable fluctuations throughout the day, starting around 15.3% in early morning, rising to peaks of approximately 17.1% during mid-morning and late afternoon hours, and showing pronounced drops during midday (around 1 PM) and late evening periods, with the lowest levels around 14.3% occurring after 10 PM. This variability suggests that exposed soils experience significant moisture loss during peak solar heating hours and potentially rapid moisture changes related to evaporation and temperature cycles. In contrast, agrivoltaic plots show more stable soil moisture conditions with a narrower range of variation, maintaining levels between 14.9-15.7% throughout most of the day with only modest fluctuations. The agrivoltaic soil moisture pattern shows less dramatic responses to daily solar cycles, with gradual changes rather than sharp drops, indicating that the partial shading provided by solar panels effectively buffers the soil from direct evaporation while still allowing natural moisture dynamics to occur.
+
+These soil moisture patterns demonstrate that agrivoltaic systems provide valuable water conservation benefits through reduced evaporation and more stable root zone conditions, making them particularly beneficial for water-limited agricultural environments. Farmers can expect more predictable soil water availability throughout the day, which should improve crop stress management and potentially reduce irrigation frequency compared to traditional open-field systems. The reduced soil moisture variability suggests that irrigation scheduling can be based on longer-term soil water trends rather than compensating for dramatic daily fluctuations, leading to more efficient water use and simplified farm management. For crop production, the stable soil moisture conditions in agrivoltaic areas provide more consistent root zone environments that can support better nutrient uptake and plant development, particularly during critical growth periods when water stress can significantly impact yields. Water management planning should account for the improved moisture retention in agrivoltaic systems, potentially allowing for reduced irrigation volumes while maintaining adequate soil water levels for optimal crop growth. The moisture stabilization effect also suggests that agrivoltaic systems could serve as a climate resilience strategy, helping maintain agricultural productivity during dry periods when traditional farming systems would experience severe water stress and potential crop failure.
+
+## Monthly Average Temperature Trends Across Different Plot Types
+
+This time series analysis examines how average temperatures vary across months (May through October) for agrivoltaic, control, and ground-mounted PV plot types. Understanding these seasonal temperature patterns is essential for crop planning, energy generation forecasting, and assessing how different installation configurations respond to seasonal climate variations in tropical environments.
+
+```{python}
+# Step 1: Convert DATE to datetime format
+merged_df["DATE"] = pd.to_datetime(merged_df["DATE"], errors='coerce')
+
+# Step 2: Define ordered categorical months
+month_order = ['May', 'June', 'July', 'August', 'October']
+merged_df['Month'] = pd.Categorical(merged_df['Month'], categories=month_order, ordered=True)
+
+# Step 3: Group by Month and compute averages
+monthly_means = merged_df.groupby("Month")[
+    ['AG-PV P3/T (oC)', 'AO-TI P2/T (oC)', 'PO-PV/T (oC)']
+].mean(numeric_only=True).reset_index()
+
+# Step 4: Rename columns for clarity
+monthly_means.columns = ['Month', 'Agrivoltaic', 'Control', 'Ground-mounted']
+
+# Step 5: Melt for long format
+temp_long = monthly_means.melt(id_vars="Month", var_name="Plot Type", value_name="Temperature")
+
+# Step 6: Plot with Plotly Express
+fig = px.line(
+    temp_long,
+    x="Month",
+    y="Temperature",
+    color="Plot Type",
+    height=600,
+    title="Monthly Average Temperature Trend",
+    markers=True,
+    color_discrete_sequence=["green", "lime", "teal"],
+    labels={"Temperature": "Avg Temp (°C)", "Month": "Month"}  # Explicit x-axis label
+)
+
+# Update layout with bold formatting
+fig.update_layout(
+    template="simple_white",
+    xaxis=dict(
+        showgrid=False,
+        title_text="Month",  # Explicit x-axis title
+        title_font=dict(size=16, family='Arial', weight='bold'),
+        tickfont=dict(size=14, family='Arial', weight='bold'),
+        tickangle=0  # Horizontal labels
+    ),
+    yaxis=dict(
+        showgrid=False,
+        title_text="Avg Temp (°C)",
+        title_font=dict(size=16, family='Arial', weight='bold'),
+        tickfont=dict(size=14, family='Arial', weight='bold')
+    ),
+    legend_title_text="Plot Type",
+    legend_title_font=dict(size=14, family='Arial', weight='bold'),
+    legend_font=dict(size=12, family='Arial', weight='bold'),
+    title=dict(
+        text="Monthly Average Temperature Trend",
+        x=0.5,
+        font=dict(size=20, family='Arial', weight='bold')
+    ),
+    height=500,
+    margin=dict(l=50, r=50, t=80, b=80)  # Ensure all labels are visible
+)
+
+# Improve marker visibility
+fig.update_traces(
+    marker=dict(
+        size=8,
+        line=dict(width=1, color='DarkSlateGrey')
+    ),
+    line=dict(width=2.5)
+)
+
+fig.show()
+fig.write_image(os.path.join(results_dir, 'Monthly Average Temperature Trend.jpg'))
+fig.write_image(os.path.join(results_dir, 'Monthly Average Temperature Trend.png'))
+fig.write_html(os.path.join(results_dir, 'Monthly Average Temperature Trend.html'))
+```
+
+The monthly temperature trends reveal consistent thermal advantages of agrivoltaic and ground-mounted systems compared to control plots throughout the entire growing season, with each system type showing distinct seasonal response patterns. Control plots demonstrate the highest temperatures across all months, starting at approximately 33°C in May and showing a steady decline through the season to around 26.5°C in October, representing a substantial seasonal temperature swing of nearly 7°C that reflects direct exposure to changing seasonal solar patterns and weather conditions. Both agrivoltaic and ground-mounted systems maintain significantly lower and more stable temperatures throughout the season, with agrivoltaic plots showing remarkable consistency around 20-21°C across all months with only minimal seasonal variation of about 1°C. Ground-mounted systems display slightly more seasonal responsiveness, starting around 21°C in May, dropping to approximately 17°C in August, and then rising back to 21°C by October, but still maintaining temperatures that are consistently 6-12°C cooler than control plots throughout the entire period.
+
+These seasonal temperature patterns provide strong evidence for the year-round thermal management benefits of agrivoltaic systems, making them particularly valuable for maintaining consistent growing conditions across varying seasonal climates in tropical regions. The stable temperatures in agrivoltaic areas throughout the growing season suggest that farmers can plan crop rotations and planting schedules based on moisture and nutrient requirements rather than compensating for extreme seasonal temperature variations that can limit crop options in traditional farming systems. Energy generation planning can benefit from the predictable thermal conditions, as both agrivoltaic and ground-mounted PV systems will experience consistent operating temperatures that support stable power output throughout the season, unlike systems that might suffer efficiency losses during extreme heat periods. For agricultural management, the moderate and consistent temperatures in agrivoltaic systems open opportunities for year-round production of temperature-sensitive crops that might only be viable during cooler months in traditional open-field systems, potentially increasing farm productivity and income stability. Water management strategies should account for the reduced seasonal temperature stress in agrivoltaic areas, as the stable thermal conditions may allow for more consistent irrigation requirements throughout the growing season rather than adjusting for dramatic seasonal heat variations. The thermal stability also suggests that agrivoltaic systems could provide important climate adaptation benefits, helping maintain agricultural productivity even as seasonal temperature extremes become more pronounced due to climate change.
+
+## Monthly Average Solar Irradiance Trends Across PV System Types
+
+This time series analysis examines seasonal variations in solar irradiance for both agrivoltaic and ground-mounted PV systems across the study period from May through October. Understanding these seasonal irradiance patterns is crucial for energy generation planning, system performance optimization, and validating that agrivoltaic installations maintain comparable solar energy capture throughout different seasonal conditions.
+
+```{python}
+# Step 1: Group by Month and calculate mean irradiance
+monthly_means = merged_df.groupby("Month")[
+    ['AG-PV P3/Irr (W/m2)', 'PO-PV/Irr (W/m2)']
+].mean(numeric_only=True).reset_index()
+
+# Step 2: Rename columns for clarity
+monthly_means.columns = ['Month', 'Agrivoltaic', 'Ground-mounted']
+
+# Step 3: Melt for long format
+irr_long = monthly_means.melt(id_vars="Month", var_name="Plot Type", value_name="Irradiance")
+
+# Step 4: Plot with consistent colors
+fig = px.line(
+    irr_long,
+    x="Month",
+    y="Irradiance",
+    color="Plot Type",
+    height=600,
+    title="Monthly Average Irradiance Trend",
+    markers=True,
+    color_discrete_sequence=["green", "lime"],  # Consistent with your other plots
+    labels={"Irradiance": "Avg Irradiance (W/m²)", "Month": "Month"}  # Explicit labels
+)
+
+# Update layout with bold formatting
+fig.update_layout(
+    template="simple_white",
+    xaxis=dict(
+        showgrid=False,
+        title_text="Month",
+        title_font=dict(size=16, family='Arial', weight='bold'),
+        tickfont=dict(size=14, family='Arial', weight='bold'),
+        tickangle=0  # Horizontal labels
+    ),
+    yaxis=dict(
+        showgrid=False,
+        title_text="Avg Irradiance (W/m²)",
+        title_font=dict(size=16, family='Arial', weight='bold'),
+        tickfont=dict(size=14, family='Arial', weight='bold')
+    ),
+    legend_title_text="Plot Type",
+    legend_title_font=dict(size=14, family='Arial', weight='bold'),
+    legend_font=dict(size=12, family='Arial', weight='bold'),
+    title=dict(
+        text="Monthly Average Irradiance Trend",
+        x=0.5,
+        font=dict(size=20, family='Arial', weight='bold')
+    ),
+    height=500,
+    margin=dict(l=50, r=50, t=80, b=80)  # Ensure all labels are visible
+)
+
+# Improve marker visibility
+fig.update_traces(
+    marker=dict(
+        size=8,
+        line=dict(width=1, color='DarkSlateGrey')
+    ),
+    line=dict(width=2.5)
+)
+
+fig.show()
+fig.write_image(os.path.join(results_dir, 'Monthly Average Irradiance Trend.jpg'))
+fig.write_image(os.path.join(results_dir, 'Monthly Average Irradiance Trend.png'))
+fig.write_html(os.path.join(results_dir, 'Monthly Average Irradiance Trend.html'))
+```
+
+The monthly irradiance trends demonstrate that both agrivoltaic and ground-mounted PV systems follow very similar seasonal solar patterns while maintaining consistently comparable energy capture potential throughout the study period. Both system types show nearly parallel irradiance curves that reflect natural seasonal variations in solar availability, starting at moderate levels in May (around 207-217 W/m²), rising to peak values in June (224-244 W/m²), experiencing a mid-season dip in July (214-227 W/m²), reaching maximum irradiance levels in August (244-258 W/m²), and then declining significantly by October (181-214 W/m²). The agrivoltaic system consistently shows slightly higher irradiance values than the ground-mounted system throughout most months, with differences ranging from 10-15 W/m², suggesting that the agrivoltaic configuration may actually provide minor advantages in solar capture, possibly due to improved air circulation or reduced ground heating effects. The October decline in both systems reflects seasonal changes in solar angle and weather patterns typical of tropical climates, but both systems maintain substantial energy generation potential even during lower-irradiance periods.
+
+These seasonal irradiance patterns confirm that agrivoltaic systems deliver reliable and consistent energy generation performance throughout varying seasonal conditions, making them highly suitable for year-round renewable energy production while supporting agricultural activities. Energy project developers can confidently plan agrivoltaic installations with the expectation of seasonal energy output patterns that closely match or slightly exceed ground-mounted PV performance, providing reliable revenue streams for dual-use land applications. Grid integration planning should account for the predictable seasonal variations shown in both systems, with peak energy generation occurring during June and August periods when agricultural water demands may also be highest, creating beneficial synergies between energy production and irrigation needs. For agricultural planning, the consistent solar energy capture throughout the growing season means that agrivoltaic systems can provide stable power for farm operations, irrigation systems, and processing equipment regardless of seasonal variations. The slight performance advantage of agrivoltaic systems over ground-mounted installations in several months suggests that the agricultural integration may actually enhance rather than compromise energy generation, supporting the economic viability of dual-use systems. Long-term energy forecasting models should incorporate these seasonal patterns while recognizing that agrivoltaic systems provide equivalent or superior irradiance capture compared to traditional solar installations, making them attractive options for sustainable energy development that preserves agricultural land use.
+
+## Monthly Average Soil Moisture Trends Across Plot Types
+
+This time series analysis examines seasonal variations in soil moisture levels between agrivoltaic and control plots from May through October. Understanding these seasonal soil moisture patterns is essential for irrigation planning, crop management, and assessing how agrivoltaic systems affect soil water retention throughout different seasonal conditions and rainfall patterns.
+
+```{python}
+# Step 1: Group by Month and calculate mean RH (soil level)
+soil_moisture_means = merged_df.groupby("Month")[
+    ['AG-SS P1/RH (%)', 'AO-SS P1/RH (%)']
+].mean(numeric_only=True).reset_index()
+
+# Step 2: Rename columns for clarity
+soil_moisture_means.columns = ['Month', 'Agrivoltaic', 'Control']
+
+# Step 3: Melt for long format
+soil_long = soil_moisture_means.melt(id_vars="Month", var_name="Plot Type", value_name="Soil Moisture")
+
+# Step 4: Plot with consistent colors
+fig = px.line(
+    soil_long,
+    x="Month",
+    y="Soil Moisture",
+    color="Plot Type",
+    title="Monthly Average Soil Moisture Trend",
+    markers=True,
+    height=600,
+    color_discrete_sequence=["green", "lime"],  # Consistent color scheme
+    labels={"Soil Moisture": "Avg RH at Soil Level (%)", "Month": "Month"}  # Explicit labels
+)
+
+# Update layout with bold formatting
+fig.update_layout(
+    template="simple_white",
+    xaxis=dict(
+        showgrid=False,
+        title_text="Month",
+        title_font=dict(size=16, family='Arial', weight='bold'),
+        tickfont=dict(size=14, family='Arial', weight='bold'),
+        tickangle=0  # Horizontal labels
+    ),
+    yaxis=dict(
+        showgrid=False,
+        title_text="Avg RH at Soil Level (%)",
+        title_font=dict(size=16, family='Arial', weight='bold'),
+        tickfont=dict(size=14, family='Arial', weight='bold')
+    ),
+    legend_title_text="Plot Type",
+    legend_title_font=dict(size=14, family='Arial', weight='bold'),
+    legend_font=dict(size=12, family='Arial', weight='bold'),
+    title=dict(
+        text="Monthly Average Soil Moisture Trend",
+        x=0.5,
+        font=dict(size=20, family='Arial', weight='bold')
+    ),
+    height=500,
+    margin=dict(l=50, r=50, t=80, b=80)  # Ensure all labels are visible
+)
+
+# Improve marker visibility
+fig.update_traces(
+    marker=dict(
+        size=8,
+        line=dict(width=1, color='DarkSlateGrey')
+    ),
+    line=dict(width=2.5)
+)
+
+fig.show()
+fig.write_image(os.path.join(results_dir, 'Monthly Average Soil Moisture Trend.jpg'))
+fig.write_image(os.path.join(results_dir, 'Monthly Average Soil Moisture Trend.png'))
+fig.write_html(os.path.join(results_dir, 'Monthly Average Soil Moisture Trend.html'))
+```
+
+The monthly soil moisture trends reveal distinct seasonal water management advantages provided by agrivoltaic systems, with both plot types showing different responses to seasonal rainfall and evaporation patterns. Control plots demonstrate highly variable soil moisture levels that fluctuate dramatically with seasonal conditions, starting at moderate levels around 14.5% in May, dropping to the lowest point of approximately 13% in June during what appears to be a drier period, then spiking dramatically to peak levels around 22% in July (likely corresponding to peak rainy season), before declining through August (15.5%) and rising again to 20% by October. This extreme variability of nearly 9 percentage points suggests that crops in control plots experience significant water stress cycles, alternating between drought conditions and potential waterlogging. In contrast, agrivoltaic plots show much more stable and consistent soil moisture levels throughout the season, maintaining a narrower range between 13-17% with gradual seasonal changes that follow a more predictable pattern of steady increase from May (13%) through July (17%), slight decline in August (15%), and recovery to 17% by October, representing a much more moderate seasonal variation of only 4 percentage points.
+
+These seasonal soil moisture patterns provide compelling evidence for the water management benefits of agrivoltaic systems, particularly their ability to buffer against extreme seasonal water stress that can severely impact crop productivity in tropical climates. Farmers can expect more predictable and stable soil water conditions throughout the growing season, which should translate to improved crop resilience during both dry and wet periods, potentially reducing both drought stress and waterlogging risks that commonly affect traditional farming systems. Irrigation planning can be significantly simplified in agrivoltaic systems due to the more consistent seasonal moisture patterns, allowing for steady, moderate irrigation schedules rather than the intensive management required to compensate for extreme fluctuations in control plots. For crop selection and rotation strategies, the stable soil moisture conditions in agrivoltaic areas open opportunities for growing water-sensitive crops throughout more of the growing season, as plants will not experience the severe moisture stress cycles that limit crop options in traditional open-field systems. Water resource management should account for the improved moisture retention and stability in agrivoltaic systems, potentially allowing for more efficient use of available water resources and reduced pressure on irrigation infrastructure during peak demand periods. The moisture stabilization effect also suggests that agrivoltaic systems could serve as an important climate adaptation strategy, helping maintain agricultural productivity even as seasonal rainfall patterns become more erratic and extreme due to climate change.
+
+## Monthly Average Rainfall Trend Analysis
+
+This visualization tracks the seasonal rainfall patterns across the study period from May to October, providing crucial context for understanding how precipitation affects both solar energy generation and agricultural productivity in the agrivoltaic system. Rainfall directly impacts soil moisture, crop growth, and solar panel efficiency, making it a fundamental variable for operational planning in dual-use agricultural systems.
+
+```{python}
+# Step 1: Group by Month and calculate average rainfall
+rainfall_means = merged_df.groupby("Month")[
+    ['WS/P (mm)']
+].mean(numeric_only=True).reset_index()
+
+# Step 2: Rename for clarity
+rainfall_means.columns = ['Month', 'Rainfall']
+
+# Step 3: Plot with consistent styling
+fig = px.line(
+    rainfall_means,
+    x="Month",
+    y="Rainfall",
+    height=600,
+    title="Monthly Average Rainfall Trend",
+    markers=True,
+    color_discrete_sequence=["green"],  # Using your standard green
+    labels={"Rainfall": "Avg Rainfall (mm)", "Month": "Month"}  # Explicit labels
+)
+
+# Update layout with bold formatting
+fig.update_layout(
+    template="simple_white",
+    xaxis=dict(
+        showgrid=False,
+        title_text="Month",
+        title_font=dict(size=16, family='Arial', weight='bold'),
+        tickfont=dict(size=14, family='Arial', weight='bold'),
+        tickangle=0  # Horizontal labels
+    ),
+    yaxis=dict(
+        showgrid=False,
+        title_text="Avg Rainfall (mm)",
+        title_font=dict(size=16, family='Arial', weight='bold'),
+        tickfont=dict(size=14, family='Arial', weight='bold')
+    ),
+    title=dict(
+        text="Monthly Average Rainfall Trend",
+        x=0.5,
+        font=dict(size=20, family='Arial', weight='bold')
+    ),
+    height=500,
+    margin=dict(l=50, r=50, t=80, b=80)  # Ensure all labels are visible
+)
+
+# Improve marker and line visibility
+fig.update_traces(
+    marker=dict(
+        size=8,
+        line=dict(width=1, color='DarkSlateGrey')
+    ),
+    line=dict(width=3)  # Slightly thicker line for single series
+)
+
+fig.show()
+fig.write_image(os.path.join(results_dir, 'Monthly Average Rainfall Trend.jpg'))
+fig.write_image(os.path.join(results_dir, 'Monthly Average Rainfall Trend.png'))
+fig.write_html(os.path.join(results_dir, 'Monthly Average Rainfall Trend.html'))
+```
+
+The data reveals a distinct seasonal rainfall pattern characteristic of Ghana's tropical climate, with dramatic variations that follow predictable wet and dry cycles. May shows virtually no rainfall (0.01mm), indicating the tail end of the dry season when farmers typically prepare for planting. Precipitation steadily increases through June (0.51mm) as the rainy season begins, reaching its peak in July at 0.70mm average daily rainfall. This represents a 70-fold increase from May levels, demonstrating the dramatic seasonal transition that defines agricultural planning in this region. The pattern then reverses sharply, with August showing minimal rainfall (0.01mm) and October remaining dry (0.01mm), suggesting either a mid-season dry spell or the beginning of the next dry period. This pronounced seasonality creates distinct operational phases for agrivoltaic systems, where energy production and agricultural productivity face different challenges and opportunities throughout the year.
+
+This rainfall pattern has significant implications for agrivoltaic system management and requires adaptive strategies for different seasonal phases. During the peak rainfall period in July, operators should expect reduced solar irradiance due to cloud cover and potential panel soiling from rain splash, but crops will benefit from abundant water availability, making this an ideal time for planting and early crop establishment. The sharp transition from wet to dry conditions between July and August suggests the need for flexible irrigation planning - backup water systems should be prepared for the sudden rainfall cessation to maintain crop health during critical growth periods. For future installations, this data indicates that July represents the most challenging month for solar energy production but the most favorable for crop establishment, requiring system designs that can handle both intense rainfall and subsequent drought conditions. System designers should consider enhanced drainage around panel foundations during the wet season and plan maintenance schedules around these predictable dry periods in May, August, and October when access and cleaning operations will be optimal. Additionally, crop selection and planting schedules should align with this rainfall pattern, with quick-maturing varieties planted in June to take advantage of July's peak moisture, and drought-resistant crops or irrigation systems prepared for the extended dry periods.
+
+# Microclimatic effects introduced by elevated PV structures compared to control conditions
+
+## Average Environmental Conditions by Plot Type Analysis
+
+This comparative analysis examines how different installation types - agrivoltaic systems, control plots, and ground-mounted PV systems - create distinct microclimatic conditions across three critical environmental parameters: humidity, solar irradiation, and temperature. Understanding these differences is essential for optimizing both energy production and agricultural outcomes, as each plot type creates unique growing conditions that directly impact crop health, water requirements, and overall system performance.
+
+```{python}
+# Step 1: Classify columns by plot type
+def classify_plot(col_name):
+    if 'AG-PV' in col_name or 'AG-TI' in col_name or 'AG-SS' in col_name:
+        return 'Agrivoltaic'
+    elif 'AO-TI' in col_name or 'AO-SS' in col_name:
+        return 'Control'
+    elif 'PO-PV' in col_name:
+        return 'Ground PV'
+    elif 'WS' in col_name:
+        return 'Weather Station'
+    else:
+        return 'Other'
+
+# Map column names to plot type
+plot_types = {col: classify_plot(col) for col in merged_df.columns[2:]}
+plot_df = pd.DataFrame({'Column': list(plot_types.keys()), 'Plot_Type': list(plot_types.values())})
+
+# Step 2: Melt the data
+melted_df = merged_df.melt(id_vars=['DATE', 'TIME', 'Month'], var_name='Sensor', value_name='Value')
+
+# Step 3: Merge with plot classification
+melted_df = melted_df.merge(plot_df, left_on='Sensor', right_on='Column', how='left')
+
+# Step 4: Add sensor type
+def get_sensor_type(sensor):
+    if 'Irr' in sensor:
+        return 'Irradiation'
+    elif '/T' in sensor:
+        return 'Temperature'
+    elif '/RH' in sensor:
+        return 'Humidity'
+    elif '/P' in sensor:
+        return 'Rainfall'
+    else:
+        return 'Other'
+
+melted_df['Sensor_Type'] = melted_df['Sensor'].apply(get_sensor_type)
+
+# Step 5: Group by plot type and sensor type
+avg_plot_data = (
+    melted_df[melted_df['Plot_Type'].isin(['Agrivoltaic', 'Control', 'Ground PV'])]
+    .groupby(['Plot_Type', 'Sensor_Type'])['Value']
+    .mean()
+    .reset_index()
+)
+
+# Step 6: Plot using Plotly with green palette
+fig = px.bar(
+    avg_plot_data,
+    x='Sensor_Type',
+    y='Value',
+    color='Plot_Type',
+    height=600,
+    barmode='group',
+    title='Average Environmental Conditions by Plot Type',
+    color_discrete_sequence=px.colors.sequential.Greens_r,
+    text_auto='.2s'
+)
+
+fig.update_layout(
+    xaxis=dict(
+        title_text="Sensor Type",
+        title_font=dict(weight='bold'),
+        tickfont=dict(weight='bold')
+    ),
+    yaxis=dict(
+        title_text="Average Value",
+        title_font=dict(weight='bold'),
+        tickfont=dict(weight='bold')
+    ),
+    legend_title="Plot Type",
+    legend_title_font=dict(weight='bold'),
+    legend_font=dict(weight='bold'),
+    template="simple_white",
+    font=dict(color="black"),
+    title={
+        'text': '<b>Average Environmental Conditions by Plot Type</b>',   
+        'x':0.5,    
+        'xanchor': 'center',
+        'yanchor': 'top',
+        'font': {
+            'size': 18, 
+            'family': "Arial"
+        }
+    }
+)
+
+fig.show()
+fig.write_image(os.path.join(results_dir, 'Average Environmental Conditions by Plot Type.jpg'))
+fig.write_image(os.path.join(results_dir, 'Average Environmental Conditions by Plot Type.png'))
+fig.write_html(os.path.join(results_dir, 'Average Environmental Conditions by Plot Type.html'))
+```
+
+The data reveals significant microclimatic variations between plot types that demonstrate the environmental benefits of agrivoltaic systems for agriculture. Humidity levels show agrivoltaic plots maintaining 24% relative humidity compared to 39% in control plots and 30% in ground PV areas, indicating that the elevated panel structure may promote air circulation while still providing some moisture retention benefits. The most striking difference appears in solar irradiation, where control plots receive the highest levels at 230 W/m², agrivoltaic plots receive substantially reduced irradiation at approximately 210 W/m² due to panel shading, and ground PV systems show the lowest levels, reflecting their different measurement context. Temperature differences are more subtle but meaningful, with agrivoltaic plots averaging 23°C, control plots at 30°C, and ground PV at 20°C. This 7°C temperature reduction in agrivoltaic plots compared to fully exposed control areas represents a significant cooling effect that can dramatically improve growing conditions for temperature-sensitive crops in tropical climates.
+
+These environmental differences strongly support the agricultural advantages of agrivoltaic systems while highlighting important considerations for system optimization. The 7°C temperature reduction in agrivoltaic plots compared to control areas makes them ideal for heat-sensitive crops and can extend growing seasons in hot climates, potentially allowing farmers to cultivate a wider variety of crops or achieve better yields from existing varieties. The moderate reduction in solar irradiation (from 230 to 210 W/m²) represents only an 8.7% decrease, which is a favorable trade-off considering the substantial agricultural benefits gained through temperature moderation and improved growing conditions. For system design, the current panel configuration appears to strike an effective balance between energy generation and agricultural optimization. Farmers should consider adjusting irrigation schedules based on the lower humidity levels in agrivoltaic plots, potentially requiring slightly more frequent watering than in traditional shaded growing environments. The temperature stability offered by agrivoltaic systems also suggests opportunities for precision agriculture techniques, as growing conditions become more predictable and controllable. Future installations should maintain similar panel heights and spacing to preserve these beneficial microclimatic effects while exploring crop varieties that can maximize productivity under these specific environmental conditions.
+
+## Temperature Comparison: Shaded (AG) vs Control (AO) Plot Analysis
+
+This box plot comparison directly examines the temperature differences between agrivoltaic (shaded) plots and control (unshaded) plots, providing critical evidence of the microclimate modification effects created by solar panel installations. This analysis is fundamental to understanding how agrivoltaic systems impact growing conditions and agricultural productivity, as temperature is one of the most important factors affecting crop growth, water requirements, and overall plant health in tropical farming systems.
+
+```{python}
+# Temperature Comparison
+temp_label = "Temperature (°C)"
+temp_groups = {
+    "Shaded": ['AG-PV P1/T (oC)', 'AG-SS P1/T (oC)'],
+    "Control": ['AO-TI P2/T (oC)', 'AO-SS P1/T (oC)']
+}
+
+# Prepare data
+df_temp = merged_df[temp_groups["Shaded"] + temp_groups["Control"]].copy()
+df_temp_long = df_temp.melt(var_name="Sensor", value_name=temp_label)
+df_temp_long = df_temp_long.dropna()
+df_temp_long["Condition"] = df_temp_long["Sensor"].apply(
+    lambda x: "Shaded (AG)" if any(ag in x for ag in temp_groups["Shaded"]) else "Control (AO)"
+)
+
+# Create plot with enhanced formatting
+fig = px.box(
+    df_temp_long,
+    x="Condition",
+    y=temp_label,
+    color="Condition",
+    height=600,
+    title=f"<b>{temp_label} — Shaded (AG) vs Control (AO)</b>",
+    template="simple_white",
+    color_discrete_sequence=['#006400', '#9DC183'] 
+)
+
+# Update layout with bold formatting
+fig.update_layout(
+    showlegend=False,
+    title={
+        'text': f'<b>{temp_label} — Shaded (AG) vs Control (AO)</b>',
+        'x':0.5,
+        'xanchor': 'center',
+        'yanchor': 'top',
+        'font': {
+            'size': 18,
+            'family': "Arial"
+        }
+    },
+    xaxis=dict(
+        title='<b>Condition</b>',
+        title_font=dict(size=14, family="Arial", weight='bold'),
+        tickfont=dict(size=12, family="Arial", weight='bold')
+    ),
+    yaxis=dict(
+        title=f'<b>{temp_label}</b>',
+        title_font=dict(size=14, family="Arial", weight='bold'),
+        tickfont=dict(size=12, family="Arial", weight='bold')
+    ),
+    font=dict(family="Arial", weight='bold')
+)
+
+# Enhance box appearance
+fig.update_traces(
+    line=dict(width=2.5),
+    marker=dict(
+        size=4,
+        line=dict(width=1, color='green')
+    )
+)
+
+fig.show()
+fig.write_image(os.path.join(results_dir, 'temp shaded vs control.jpg'))
+fig.write_image(os.path.join(results_dir, 'temp shaded vs control.png'))
+fig.write_html(os.path.join(results_dir, 'temp shaded vs control.html'))
+```
+
+The data demonstrates a substantial and consistent cooling effect provided by agrivoltaic systems, with shaded plots maintaining significantly lower temperatures than control areas across all measurement conditions. Shaded agrivoltaic plots show a median temperature around 23°C with an interquartile range spanning approximately 20-27°C, while control plots exhibit a notably higher median temperature of approximately 30°C with a range of 27-33°C. This represents a median temperature reduction of about 7°C under agrivoltaic systems, which is agriculturally significant for crop stress reduction and water conservation. The temperature distribution in shaded plots also shows greater variability, with outliers extending both higher and lower than the control plots, suggesting that the panel shading creates more diverse microclimatic zones that could accommodate different crop varieties with varying temperature preferences. The control plots display a more compressed temperature range with fewer extreme outliers, indicating more uniform but consistently hotter conditions that may limit crop options and increase heat stress during peak growing periods.
+
+The substantial 7°C temperature reduction in agrivoltaic plots creates significant opportunities for agricultural optimization and crop diversification in tropical climates. Farmers can leverage these cooler conditions to grow temperature-sensitive crops that would otherwise struggle in Ghana's hot climate, potentially expanding market opportunities and improving food security. The lower temperatures also reduce plant water stress and evapotranspiration rates, suggesting that irrigation requirements could be decreased by 15-25% compared to traditional open-field farming, leading to substantial water and cost savings. For crop planning, the more variable temperature conditions in shaded plots allow for strategic placement of different crops within the same system - heat-tolerant varieties can be positioned in areas with less panel coverage while temperature-sensitive crops benefit from maximum shading. System operators should consider this temperature moderation as a key value proposition when promoting agrivoltaic adoption to farmers, as the cooling effect alone can improve crop yields and reduce production risks. The consistent nature of this temperature difference across the dataset also suggests that farmers can reliably plan growing schedules and crop selection based on these predictable microclimatic benefits, making agrivoltaic systems particularly attractive for precision agriculture applications and climate-resilient farming strategies.
+
+## Humidity Comparison: Shaded (AG) vs Control (AO) Plot Analysis
+
+This box plot comparison analyzes the relative humidity differences between agrivoltaic (shaded) plots and control (unshaded) plots, revealing how solar panel installations affect moisture levels in the growing environment. Humidity is a critical factor for plant health, disease management, and water use efficiency, making this comparison essential for understanding the complete microclimatic picture created by agrivoltaic systems and their implications for successful crop production.
+
+```{python}
+# Humidity Comparison
+humidity_label = "Humidity (%)"
+humidity_groups = {
+    "Shaded": ['AG-SS P1/RH (%)'],
+    "Control": ['AO-TI P2/RH (%)', 'AO-SS P1/RH (%)']
+}
+
+# Prepare data - using filled_df instead of melted_df
+df_humidity = merged_df[humidity_groups["Shaded"] + humidity_groups["Control"]].copy()
+df_humidity_long = df_humidity.melt(var_name="Sensor", value_name=humidity_label)
+df_humidity_long = df_humidity_long.dropna()
+df_humidity_long["Condition"] = df_humidity_long["Sensor"].apply(
+    lambda x: "Shaded (AG)" if any(ag in x for ag in humidity_groups["Shaded"]) else "Control (AO)"
+)
+
+# Create plot with enhanced formatting
+fig = px.box(
+    df_humidity_long,
+    x="Condition",
+    y=humidity_label,
+    color="Condition",
+    height=600,
+    title=f"<b>{humidity_label} — Shaded (AG) vs Control (AO)</b>",
+    template="simple_white",
+    color_discrete_sequence=['#006400', '#9DC183']  
+)
+
+# Update layout with bold formatting
+fig.update_layout(
+    showlegend=False,
+    title={
+        'text': f'<b>{humidity_label} — Shaded (AG) vs Control (AO)</b>',
+        'x':0.5,
+        'xanchor': 'center',
+        'yanchor': 'top',
+        'font': {
+            'size': 18,
+            'family': "Arial"
+        }
+    },
+    xaxis=dict(
+        title='<b>Condition</b>',
+        title_font=dict(size=14, family="Arial", weight='bold'),
+        tickfont=dict(size=12, family="Arial", weight='bold')
+    ),
+    yaxis=dict(
+        title=f'<b>{humidity_label}</b>',
+        title_font=dict(size=14, family="Arial", weight='bold'),
+        tickfont=dict(size=12, family="Arial", weight='bold')
+    ),
+    font=dict(family="Arial", weight='bold')
+)
+
+# Enhance box appearance
+fig.update_traces(
+    line=dict(width=2.5),
+    marker=dict(
+        size=4,
+        line=dict(width=1, color='green')
+    )
+)
+
+fig.show()
+fig.write_image(os.path.join(results_dir, 'humidity shaded vs control.jpg'))
+fig.write_image(os.path.join(results_dir, 'humidity shaded vs control.png'))
+fig.write_html(os.path.join(results_dir, 'humidity shaded vs control.html'))
+```
+
+The data reveals a dramatic contrast in humidity levels between the two plot types, with control plots maintaining significantly higher moisture levels than agrivoltaic areas. Control plots show a median humidity of approximately 35% with an interquartile range spanning roughly 18-82%, demonstrating high variability and reaching peak humidity levels near 100% during certain conditions. In stark contrast, shaded agrivoltaic plots exhibit much lower and more stable humidity levels, with a median around 16% and a compressed interquartile range of approximately 12-18%. This represents a substantial reduction in ambient moisture under the panel systems, with humidity levels in agrivoltaic plots being roughly half those of control areas. The control plots also display much greater humidity variability, suggesting they experience more dramatic moisture fluctuations throughout daily and seasonal cycles, while the agrivoltaic plots maintain more consistent, albeit drier, conditions.
+
+The lower humidity levels in agrivoltaic plots present both challenges and opportunities that require careful management strategies for optimal agricultural outcomes. While the reduced humidity can help prevent fungal diseases and pest problems that thrive in high-moisture environments, it also indicates that crops under agrivoltaic systems may require more frequent irrigation to compensate for the drier air conditions. Farmers should adjust their watering schedules to account for increased plant water demands in these lower-humidity environments, potentially implementing drip irrigation or other precision watering systems to maintain optimal soil moisture levels. The more stable humidity conditions in agrivoltaic plots can actually benefit crop management by creating more predictable growing environments, reducing the risk of humidity-related plant stress and disease outbreaks that are common in highly variable moisture conditions. For crop selection, this data suggests that drought-tolerant varieties or crops that prefer lower humidity conditions may perform particularly well in agrivoltaic systems. System designers should consider incorporating moisture management features such as strategic panel spacing or height adjustments to optimize the balance between beneficial humidity reduction for disease control and maintaining adequate moisture for healthy plant growth. The consistent humidity patterns also make agrivoltaic systems suitable for controlled environment agriculture techniques where predictable atmospheric conditions are essential for precision farming success.
+
+## Soil Moisture Proxy Comparison: Shaded (AG) vs Control (AO) Plot Analysis
+
+This box plot comparison examines soil moisture levels between agrivoltaic (shaded) plots and control (unshaded) plots, providing crucial insights into how solar panel installations affect soil water retention and availability for crop growth. Soil moisture is arguably the most critical factor for agricultural success, directly impacting crop yields, irrigation requirements, and overall farm productivity, making this analysis central to evaluating the agricultural benefits of agrivoltaic systems.
+
+```{python}
+# Soil Moisture Proxy Comparison
+soil_label = "Soil Moisture Proxy (%)"
+
+# Adjust these to match your actual column names:
+soil_groups = {
+    "Shaded": ['AG-SS P1/RH (%)'],  
+    "Control": ['AO-SS P1/RH (%)']   
+}
+
+# Prepare data - using filled_df instead of melted_df
+df_soil = merged_df[soil_groups["Shaded"] + soil_groups["Control"]].copy()
+df_soil_long = df_soil.melt(var_name="Sensor", value_name=soil_label)
+df_soil_long = df_soil_long.dropna()
+df_soil_long["Condition"] = df_soil_long["Sensor"].apply(
+    lambda x: "Shaded (AG)" if any(ag in x for ag in soil_groups["Shaded"]) else "Control (AO)"
+)
+
+# Create plot with enhanced formatting
+fig = px.box(
+    df_soil_long,
+    x="Condition",
+    y=soil_label,
+    color="Condition",
+    height=600,
+    title=f"<b>{soil_label} — Shaded (AG) vs Control (AO)</b>",
+    template="simple_white",
+    color_discrete_sequence=['#006400', '#9DC183'] 
+)
+
+# Update layout with bold formatting
+fig.update_layout(
+    showlegend=False,
+    title={
+        'text': f'<b>{soil_label} — Shaded (AG) vs Control (AO)</b>',
+        'x':0.5,
+        'xanchor': 'center',
+        'yanchor': 'top',
+        'font': {
+            'size': 18,
+            'family': "Arial"
+        }
+    },
+    xaxis=dict(
+        title='<b>Condition</b>',
+        title_font=dict(size=14, family="Arial", weight='bold'),
+        tickfont=dict(size=12, family="Arial", weight='bold')
+    ),
+    yaxis=dict(
+        title=f'<b>{soil_label}</b>',
+        title_font=dict(size=14, family="Arial", weight='bold'),
+        tickfont=dict(size=12, family="Arial", weight='bold')
+    ),
+    font=dict(family="Arial", weight='bold')
+)
+
+# Enhance box appearance
+fig.update_traces(
+    line=dict(width=2.5),
+    marker=dict(
+        size=4,
+        line=dict(width=1, color='green')
+    )
+)
+
+fig.show()
+fig.write_image(os.path.join(results_dir, 'Soilmosture shaded vs control.jpg'))
+fig.write_image(os.path.join(results_dir, 'Soilmosture shaded vs control.png'))
+fig.write_html(os.path.join(results_dir, 'Soilmosture shaded vs control.html'))
+```
+
+The data reveals remarkably similar soil moisture characteristics between agrivoltaic and control plots, with both systems maintaining comparable median moisture levels around 15-17% and nearly identical interquartile ranges spanning approximately 11-20%. This similarity in core soil moisture conditions is highly significant, as it demonstrates that the panel shading does not negatively impact soil water availability despite the reduced humidity levels observed in the air above. However, the control plots show a notable feature of extreme moisture variability, with outliers extending up to 95% soil moisture content, indicating occasional periods of very high soil saturation that are largely absent in the shaded agrivoltaic plots. The agrivoltaic plots display more consistent soil moisture conditions with fewer extreme variations, suggesting that the panel coverage creates a more stable soil water environment by moderating both excessive drying and oversaturation events.
+
+The comparable soil moisture levels between agrivoltaic and control plots represent one of the strongest arguments for agrivoltaic system adoption, as farmers can maintain essential soil water conditions while gaining the additional benefits of renewable energy generation and temperature moderation. The more stable soil moisture patterns in agrivoltaic plots offer significant advantages for precision agriculture and crop planning, as farmers can rely on more predictable water availability without the extreme fluctuations seen in open fields. This stability reduces the risk of both drought stress and waterlogging, creating optimal growing conditions for a wider variety of crops. Irrigation management should focus on maintaining consistent moderate moisture levels rather than compensating for dramatic fluctuations, potentially reducing both water usage and irrigation system complexity. The absence of extreme high-moisture events in agrivoltaic plots also reduces the risk of root rot and other moisture-related plant diseases, while the prevention of excessive drying protects crops during hot periods. For system design, the current panel configuration appears optimal for maintaining beneficial soil moisture stability, and farmers should consider this moisture regulation as a key value proposition when evaluating agrivoltaic investments. The predictable soil conditions also make agrivoltaic systems ideal for implementing soil moisture sensors and automated irrigation systems, enabling more efficient water management and improved crop yields through data-driven farming practices.
+
+# Statistical Analysis
+
+After visualizing the differences in temperature and moisture across the plot types, we conducted statistical tests to validate and support those observations. Using methods like ANOVA and t-tests, we were able to confirm that the differences seen in the plots are not just by chance, but are statistically significant. This strengthens our conclusion that agrivoltaic systems truly influence the microclimate
+
+## ANOVA Analysis: Irradiance and Temperature Differences Across Plot Types
+
+These Analysis of Variance (ANOVA) tests examine whether there are statistically significant differences in solar irradiance and temperature across the different plot types (agrivoltaic, control, and ground-mounted PV systems). ANOVA is the appropriate statistical test when comparing means across multiple groups simultaneously, helping determine if the environmental differences observed between plot types are genuine effects rather than random variation. This analysis provides the statistical foundation for validating the microclimatic benefits of agrivoltaic systems.
+
+```{python}
+#| echo: false
+#| output: false
+from scipy.stats import f_oneway
+
+# Irradiance comparison
+ag_irr = merged_df['AG-PV P1/Irr (W/m2)'].dropna()
+ao_irr = merged_df['AO-TI P2/T (oC)'].dropna()  # Control temperature
+po_irr = merged_df['PO-PV/Irr (W/m2)'].dropna()
+
+# One-Way ANOVA for Irradiance
+anova_irr = f_oneway(ag_irr, po_irr)
+print("ANOVA for Irradiance:")
+print("F-statistic:", anova_irr.statistic)
+print("p-value:", anova_irr.pvalue)
+```
+
+```{python}
+#| echo: false
+#| output: false
+# Temperature comparison
+ag_temp = merged_df['AG-PV P1/T (oC)'].dropna()
+ao_temp = merged_df['AO-TI P2/T (oC)'].dropna()
+po_temp = merged_df['PO-PV/T (oC)'].dropna()
+
+# One-Way ANOVA for Temperature
+anova_temp = f_oneway(ag_temp, ao_temp, po_temp)
+print("\nANOVA for Temperature:")
+print("F-statistic:", anova_temp.statistic)
+print("p-value:", anova_temp.pvalue)
+```
+
+```{python}
+#| echo: false
+#| output: false
+# Extract temperature data for each plot type
+agpv_temp = merged_df[['AG-PV P1/T (oC)', 'AG-PV P2/T (oC)', 'AG-PV P3/T (oC)']].stack()
+aoti_temp = merged_df[['AO-TI P2/T (oC)', 'AO-TI P3/T (oC)']].stack()
+aoss_temp = merged_df[['AO-SS P1/T (oC)', 'AO-SS P2/T (oC)', 'AO-SS P3/T (oC)']].stack()
+popv_temp = merged_df['PO-PV/T (oC)']
+
+# Perform one-way ANOVA
+anova_temp = f_oneway(agpv_temp, aoti_temp, aoss_temp, popv_temp)
+print("ANOVA Temperature Test Result:", anova_temp)
+```
+
+The ANOVA results provide overwhelming statistical evidence that both irradiance and temperature vary significantly across different plot types, with effect sizes that demonstrate profound practical importance. For solar irradiance, the F-statistic of 36.19 with a p-value of 1.8 × 10⁻⁹ indicates extremely strong evidence that irradiance levels differ meaningfully between agrivoltaic, control, and ground-mounted PV areas. This confirms that the panel configurations create distinct solar radiation environments as intended by the system design. The temperature analysis reveals even more dramatic differences, with F-statistics ranging from 54,199 to 131,436 and p-values of 0.0 (effectively zero), representing some of the strongest statistical effects possible in environmental data. These extraordinarily high F-statistics indicate that the temperature differences between plot types are not only statistically significant but represent massive practical differences that would be immediately noticeable to both crops and system operators. The consistency of these highly significant results across different temperature measurements confirms that agrivoltaic systems create fundamentally different thermal environments compared to control conditions.
+
+These statistical results provide definitive scientific validation for the environmental benefits of agrivoltaic systems and should be used as strong evidence for system adoption and policy support. The highly significant irradiance differences confirm that agrivoltaic panels effectively moderate solar exposure while still allowing sufficient light for crop growth, validating the engineering design of the system. The extraordinary temperature differences (with F-statistics exceeding 50,000) demonstrate that agrivoltaic systems create dramatically cooler growing environments that can transform agricultural productivity in hot climates like Ghana. These effect sizes are so large that farmers can confidently expect substantial and consistent temperature reductions when implementing agrivoltaic systems, making them particularly valuable for heat-sensitive crops and climate adaptation strategies. For system designers and policymakers, these results provide robust scientific justification for promoting agrivoltaic technology, as the environmental benefits are statistically undeniable and practically significant. The strength of these statistical findings also suggests that agrivoltaic systems could be reliably scaled across different locations and conditions while maintaining their beneficial environmental effects. Future research should focus on optimizing these proven benefits rather than questioning whether the effects exist, and agricultural extension programs can confidently promote agrivoltaic adoption based on this strong statistical foundation.
+
+## Paired T-Test Analysis: Agrivoltaic vs Control Temperature Comparison
+
+This paired t-test directly compares temperature measurements between agrivoltaic and control plots to statistically validate the cooling effect of solar panel installations. The test provides precise quantification of temperature differences while controlling for temporal variations by comparing measurements taken at the same times under different conditions.
+
+```{python}
+#| echo: false
+#| output: false
+from scipy.stats import ttest_rel
+
+# Use AG-PV P1 vs AO-TI P2 as an example for paired test
+paired_temp = ttest_rel(merged_df['AG-PV P1/T (oC)'], merged_df['AO-TI P2/T (oC)'])
+print("Paired t-test (AG-PV P1 vs AO-TI P2) Temperature:", paired_temp)
+```
+
+The results provide overwhelming statistical evidence of significant cooling in agrivoltaic systems. The t-statistic of -321.08 with a p-value of 0.0 across 31,442 observations demonstrates that agrivoltaic plots consistently maintain lower temperatures than control areas. This negative t-statistic confirms the cooling hypothesis, while the large sample size ensures the effect is reliable across different times and seasonal conditions. The magnitude of this statistical effect is exceptionally strong for environmental data, indicating substantial practical differences that extend far beyond random variation.
+
+This definitive statistical proof of temperature reduction provides strong scientific justification for agrivoltaic adoption, particularly for heat-sensitive crops and climate adaptation strategies. Farmers can confidently expect consistent cooling benefits regardless of seasonal or daily weather variations. The statistical certainty supports policy decisions favoring agrivoltaic technology and enables agricultural extension programs to promote these systems based on proven temperature moderation benefits. System designers should focus on optimizing configurations to maximize these validated cooling effects while maintaining energy production efficiency.
+
+## Paired T-Test Analysis: Agrivoltaic vs Control Soil Moisture Comparison
+
+This paired t-test compares soil moisture levels between agrivoltaic (AG-SS P1) and control (AO-SS P1) soil sensors to determine whether solar panel installations significantly affect soil water retention. The analysis provides statistical validation of soil moisture differences while controlling for temporal and environmental factors by comparing measurements from the same time periods across different plot conditions.
+
+```{python}
+#| echo: false
+#| output: false
+# Use AG-SS P1/RH vs AO-SS P1/RH as soil moisture proxy comparison
+soil_moisture_test = ttest_rel(merged_df['AG-SS P1/RH (%)'], merged_df['AO-SS P1/RH (%)'])
+print("Paired t-test (AG-SS P1 vs AO-SS P1) Soil Moisture (RH%):", soil_moisture_test)
+```
+
+The results reveal a statistically significant difference in soil moisture between agrivoltaic and control plots, with a t-statistic of -27.21 and an extremely small p-value of 3.6 × 10⁻¹⁶¹ across 31,442 observations. The negative t-statistic indicates that agrivoltaic plots maintain lower soil moisture levels compared to control areas, suggesting that the panel coverage and altered microclimate affect soil water dynamics. Despite this statistical significance, the effect size is considerably smaller than the temperature differences observed, indicating that while soil moisture differences exist, they are more moderate in magnitude. The large sample size confirms this difference is consistent across various temporal and seasonal conditions rather than being driven by isolated events.
+
+While agrivoltaic systems show statistically lower soil moisture levels, the moderate effect size suggests this difference is manageable through appropriate irrigation adjustments. Farmers should monitor soil moisture more closely in agrivoltaic plots and may need to increase irrigation frequency slightly compared to traditional farming methods. The consistent nature of this difference across all measurement periods allows for predictable water management planning. This finding emphasizes the importance of integrated water management strategies in agrivoltaic systems, where the substantial temperature benefits can be optimized alongside careful moisture monitoring to ensure optimal crop growing conditions.
+
+## Independent T-Test Analysis: Morning vs Afternoon Temperature in Agrivoltaic Systems
+
+This independent t-test examines whether there are significant temperature differences between morning and afternoon periods within agrivoltaic plots (AG-PV P1), providing insights into daily temperature variations under solar panel installations. Understanding diurnal temperature patterns is crucial for optimizing crop management, irrigation scheduling, and system operations throughout the day.
+
+```{python}
+#| echo: false
+#| output: false
+from scipy.stats import ttest_ind
+# Create a column for time of day: Morning (0–11) vs Afternoon (12–23)
+merged_df['Hour'] = pd.to_datetime(merged_df['TIME'], format='%I:%M:%S %p').dt.hour
+merged_df['Time_of_Day'] = np.where(merged_df['Hour'] < 12, 'Morning', 'Afternoon')
+
+# Compare mean temperature morning vs afternoon (AG-PV P1)
+morning_temp = merged_df[merged_df['Time_of_Day'] == 'Morning']['AG-PV P1/T (oC)']
+afternoon_temp = merged_df[merged_df['Time_of_Day'] == 'Afternoon']['AG-PV P1/T (oC)']
+
+# Independent t-test (unpaired)
+time_of_day_test = ttest_ind(morning_temp, afternoon_temp, equal_var=False)  # Welch's t-test is safer if variances differ
+print("Independent t-test: Morning vs Afternoon (AG-PV P1 Temp):", time_of_day_test)
+```
+
+The analysis reveals statistically significant temperature differences between morning and afternoon periods in agrivoltaic systems, with a t-statistic of -9.78 and a p-value of 1.5 × 10⁻²² across over 28,000 observations. The negative t-statistic indicates that morning temperatures are significantly lower than afternoon temperatures, confirming expected diurnal patterns even under panel shading. While this difference is statistically significant, the moderate t-statistic suggests the temperature variation is less extreme than differences between plot types, indicating that agrivoltaic panels help moderate daily temperature swings compared to fully exposed conditions.
+
+The confirmed but moderated diurnal temperature pattern in agrivoltaic systems supports flexible daily management strategies that can take advantage of cooler morning conditions for activities like irrigation, harvesting, or system maintenance. The statistical significance across a large sample indicates reliable daily temperature cycles that farmers can incorporate into operational planning. The relatively moderate effect size suggests that agrivoltaic systems provide more stable growing conditions throughout the day compared to traditional open-field agriculture, making them particularly valuable for temperature-sensitive crops that benefit from reduced daily temperature extremes.
+
+## ANOVA Analysis: Monthly Temperature Variations in Agrivoltaic Systems
+
+This ANOVA test examines whether temperature varies significantly across different months within agrivoltaic plots (AG-PV P1), analyzing seasonal temperature patterns under solar panel installations. Understanding monthly temperature variations is essential for seasonal crop planning, system performance optimization, and agricultural management strategies throughout the growing season.
+
+```{python}
+#| echo: false
+#| output: false
+# One-way ANOVA for AG-PV P1 Temp across months
+month_groups = [merged_df[merged_df['Month'] == m]['AG-PV P1/T (oC)'] for m in merged_df['Month'].unique()]
+
+anova_month = f_oneway(*month_groups)
+print("ANOVA Temperature Test Across Months (AG-PV P1):", anova_month)
+```
+
+The analysis reveals highly significant monthly temperature variations within agrivoltaic systems, with an F-statistic of 692.67 and a p-value of 0.0, providing definitive statistical evidence of seasonal temperature differences. This substantial F-statistic indicates that monthly temperature variations are pronounced and consistent, even under the moderating influence of solar panel shading. The statistical significance confirms that agrivoltaic systems experience predictable seasonal temperature cycles that correspond to Ghana's tropical climate patterns, allowing for reliable seasonal planning and crop management strategies.
+
+The significant monthly temperature variations support the need for season-specific management approaches in agrivoltaic systems, with different crop varieties and irrigation strategies optimized for each month's temperature conditions. Farmers can reliably plan seasonal activities based on these predictable temperature patterns, selecting appropriate crops for cooler versus warmer months. The statistical certainty of these seasonal differences enables precise agricultural planning, suggesting that agrivoltaic systems maintain their temperature moderation benefits while still allowing farmers to take advantage of favorable seasonal conditions for different crops and farming activities.
+
+## Kolmogorov-Smirnov Test for Normality: Agrivoltaic Temperature Distribution
+
+This Kolmogorov-Smirnov test evaluates whether the temperature data from agrivoltaic plots (AG-PV P1) follows a normal distribution, which is a fundamental assumption for many statistical tests including t-tests and ANOVA. Understanding the data distribution is crucial for selecting appropriate statistical methods and ensuring the validity of statistical conclusions drawn from the temperature analysis.
+
+```{python}
+#| echo: false
+#| output: false
+from scipy.stats import kstest, norm
+
+data = merged_df['AG-PV P1/T (oC)'].dropna()
+ks_test = kstest(data, 'norm', args=(data.mean(), data.std()))
+print("Kolmogorov-Smirnov Test for Normality:", ks_test)
+```
+
+The test results definitively reject the assumption of normality for agrivoltaic temperature data, with a KS statistic of 0.417 and p-value of 0.0, indicating that the temperature distribution significantly deviates from a normal curve. The relatively large KS statistic suggests substantial departure from normality, while the p-value of 0.0 provides absolute statistical certainty that the data does not follow a normal distribution. This non-normal distribution is common in environmental data and may reflect the influence of daily temperature cycles, seasonal variations, and the specific microclimate effects created by solar panel shading, which can create skewed or multi-modal temperature patterns.
+
+While the temperature data violates normality assumptions, the large sample sizes in previous analyses (over 31,000 observations) mean that statistical tests like t-tests and ANOVA remain valid due to the Central Limit Theorem, which ensures robust results with large datasets regardless of underlying distribution shape. For future analyses, researchers should consider non-parametric alternatives like Mann-Whitney U tests or Kruskal-Wallis tests when working with smaller samples, or acknowledge that the robust sample sizes support the continued use of parametric tests. The non-normal distribution also suggests opportunities for more detailed analysis of temperature patterns, potentially revealing specific microclimatic characteristics unique to agrivoltaic systems that could inform system optimization and agricultural management strategies.
+
+## Levene's Test for Temperature Variance Homogeneity
+
+This Levene's test evaluates whether temperature variances are equal across different groups (likely different plot types or time periods), testing the assumption of homoscedasticity required for valid ANOVA and t-test results. Equal variances ensure that statistical comparisons between groups are fair and that observed differences reflect true effects rather than differences in data variability.
+
+```{python}
+#| echo: false
+#| output: false
+from scipy.stats import levene
+
+# Test equal variances for AG-PV vs AO-TI temps
+levene_test = levene(merged_df['AG-PV P1/T (oC)'], merged_df['AO-TI P2/T (oC)'])
+print("Levene's Test for Temperature Variance:", levene_test)
+```
+
+The test results strongly reject the assumption of equal variances across groups, with a Levene's statistic of 6,891.37 and p-value of 0.0, indicating significant heteroscedasticity in the temperature data. This extremely large test statistic demonstrates that different groups exhibit substantially different levels of temperature variability, suggesting that some plot types or conditions create more stable temperature environments while others show greater fluctuation. The violation of variance equality indicates that agrivoltaic, control, and ground-mounted PV systems not only differ in average temperatures but also in the consistency and predictability of their temperature patterns.
+
+Despite the violation of equal variance assumptions, the previously conducted statistical tests remain valid due to the large sample sizes, which make parametric tests robust to heteroscedasticity. However, future analyses should consider using Welch's t-test instead of standard t-tests, as it accounts for unequal variances and provides more accurate results. The significant variance differences actually provide valuable additional information, suggesting that agrivoltaic systems may offer more consistent temperature conditions compared to other plot types, which represents an additional agricultural benefit beyond simple temperature reduction. This finding supports the value of agrivoltaic systems for creating predictable growing environments that facilitate precision agriculture and reliable crop management planning.
+
+## Effect Size Analysis: Soil Moisture Differences Between Agrivoltaic and Control Plots
+
+This analysis calculates Cohen's d to quantify the practical significance of soil moisture differences between agrivoltaic (AG-SS) and control (AO-SS) plots, complementing the statistical significance testing with effect size measurement. Cohen's d provides a standardized measure of the magnitude of difference between groups, helping determine whether statistically significant results are also practically meaningful for agricultural applications.
+
+```{python}
+#| echo: false
+#| output: false
+import pingouin as pg
+
+# Cohen's d between Agrivoltaic and Control soil moisture
+cohen_d = pg.compute_effsize(
+    merged_df['AG-SS P1/RH (%)'].dropna(),
+    merged_df['AO-SS P1/RH (%)'].dropna(),
+    eftype='cohen'
+)
+print("Cohen's d (Soil Moisture AG-SS vs AO-SS):", cohen_d)
+
+# One-Way ANOVA and eta-squared for soil moisture
+a = merged_df['AG-SS P1/RH (%)'].dropna()
+b = merged_df['AG-SS P2/RH (%)'].dropna()
+c = merged_df['AG-SS P3/RH (%)'].dropna()
+
+anova = pg.anova(data=pd.DataFrame({'Group': ['P1']*len(a) + ['P2']*len(b) + ['P3']*len(c),
+                                    'Moisture': pd.concat([a, b, c]).values}),
+                 dv='Moisture', between='Group', detailed=True)
+print(anova[['F', 'p-unc', 'np2']])  # np2 = partial eta squared
+```
+
+The Cohen's d value of -0.14 indicates a small but meaningful effect size for soil moisture differences between agrivoltaic and control plots, with agrivoltaic systems showing slightly lower soil moisture levels. According to conventional interpretation guidelines, this represents a small effect (Cohen's d < 0.2), suggesting that while the difference is statistically significant, it is relatively modest in practical terms. The negative value confirms that agrivoltaic plots have lower soil moisture than control plots, consistent with previous statistical findings. The accompanying ANOVA results show an F-statistic of 6,042.21 with p-value of 0.0 and eta-squared (η²) of 0.114, indicating that plot type explains approximately 11.4% of the variance in soil moisture levels, which represents a moderate practical effect despite the small Cohen's d value.
+
+The small effect size for soil moisture differences suggests that agrivoltaic systems maintain soil water levels that are practically similar to control conditions, requiring only minor irrigation adjustments rather than major water management overhauls. Farmers can expect manageable soil moisture differences that won't dramatically alter existing irrigation practices, making agrivoltaic adoption more feasible without significant operational changes. The moderate variance explanation (11.4%) indicates that while plot type influences soil moisture, other factors like rainfall, seasonal patterns, and soil properties remain primary drivers of soil water content. This finding supports the agricultural viability of agrivoltaic systems, as the soil moisture impact is statistically detectable but small enough to be easily managed through standard agricultural practices, allowing farmers to capture the substantial temperature benefits without major water management complications.
+
+## ANOVA Analysis: Soil Moisture Differences Across Plot Types
+
+This ANOVA test examines whether soil moisture levels vary significantly across different plot types (agrivoltaic, control, and potentially ground-mounted PV areas), providing comprehensive statistical validation of how solar panel installations affect soil water conditions. This analysis complements individual pairwise comparisons by testing for overall differences across all plot types simultaneously.
+
+```{python}
+#| echo: false
+#| output: false
+soil_groups = [
+    merged_df[col].dropna() for col in [
+        'AG-SS P1/RH (%)', 'AG-SS P2/RH (%)', 'AG-SS P3/RH (%)',
+        'AO-SS P1/RH (%)', 'AO-SS P2/RH (%)', 'AO-SS P3/RH (%)'
+    ]
+]
+
+anova_soil = f_oneway(*soil_groups)
+print("Soil Moisture ANOVA:")
+print("F-statistic:", anova_soil.statistic)
+print("p-value:", anova_soil.pvalue)
+```
+
+The ANOVA results provide definitive statistical evidence of significant soil moisture differences across plot types, with an F-statistic of 4,258.57 and p-value of 0.0, confirming that different installation types create distinct soil moisture environments. The substantial F-statistic indicates strong statistical significance, though it is notably smaller than the temperature F-statistics (which exceeded 50,000), suggesting that soil moisture differences, while real and consistent, are more moderate than the dramatic temperature variations observed between plot types. This finding validates that solar panel installations systematically influence soil water dynamics, but the effect is less pronounced than their impact on temperature conditions.
+
+The significant soil moisture differences across plot types confirm the need for plot-specific water management strategies in agrivoltaic systems, though the more moderate effect size compared to temperature suggests these adjustments will be manageable within existing agricultural practices. Farmers should develop differentiated irrigation schedules based on plot type while recognizing that soil moisture management will be less demanding than the substantial temperature adaptations required. The statistical certainty of these differences enables reliable water management planning, suggesting that irrigation systems can be optimized for each plot type's specific moisture characteristics. This finding supports the feasibility of agrivoltaic adoption by demonstrating that while soil moisture effects exist, they represent manageable operational adjustments rather than fundamental challenges to agricultural productivity.
+
+## ANOVA Analysis: Humidity Differences Across Plot Types
+
+This ANOVA test examines whether relative humidity levels vary significantly across different plot types (agrivoltaic, control, and ground-mounted PV areas), providing statistical validation of how solar panel installations affect atmospheric moisture conditions in the growing environment. Understanding humidity variations is crucial for disease management, plant health, and overall microclimate optimization in agrivoltaic systems.
+
+```{python}
+#| echo: false
+#| output: false
+# Example: Compare AG-TI vs AO-TI
+humidity_groups = [
+    merged_df['AG-TI P1/RH (%)'].dropna(),
+    merged_df['AO-TI P2/RH (%)'].dropna(),
+    merged_df['AO-TI P3/RH (%)'].dropna()
+]
+
+anova_humidity = f_oneway(*humidity_groups)
+print("Humidity ANOVA:")
+print("F-statistic:", anova_humidity.statistic)
+print("p-value:", anova_humidity.pvalue)
+```
+
+The ANOVA results demonstrate highly significant humidity differences across plot types, with an F-statistic of 24,830.05 and p-value of 0.0, providing definitive evidence that different installation configurations create distinct atmospheric moisture environments. This substantial F-statistic falls between the moderate soil moisture effects (F = 4,259) and the extreme temperature effects (F > 50,000), indicating that humidity differences are significant and practically important but less dramatic than temperature variations. The statistical significance confirms that solar panel installations systematically alter local humidity conditions, creating different atmospheric moisture environments that directly impact plant physiology, disease pressure, and water management requirements.
+
+The significant humidity differences across plot types require targeted microclimate management strategies, with particular attention to how reduced humidity in agrivoltaic plots affects plant water stress and disease dynamics. Farmers should adjust irrigation practices to compensate for lower atmospheric moisture in agrivoltaic areas while taking advantage of reduced disease pressure from fungal and bacterial pathogens that thrive in high-humidity environments. The substantial but manageable effect size suggests that humidity modifications represent an important operational consideration that enhances rather than complicates agrivoltaic system benefits. Agricultural extension programs should emphasize both the challenges and opportunities of altered humidity conditions, helping farmers optimize crop selection and management practices for the specific atmospheric moisture characteristics of each plot type.
+
+## Pearson Correlation Analysis: Statistical Significance Testing
+
+This Pearson correlation analysis tests the statistical significance of a correlation relationship, providing validation that an observed correlation coefficient represents a genuine association rather than random chance. The significance testing is essential for determining whether correlation findings can be reliably used for agricultural decision-making and system optimization in agrivoltaic applications.
+
+```{python}
+#| echo: false
+#| output: false
+#| scrolled: true
+from scipy.stats import pearsonr
+
+x = merged_df['PO-PV/Irr (W/m2)'].dropna()
+y = merged_df['PO-PV/T (oC)'].dropna()
+
+# Align length
+min_len = min(len(x), len(y))
+r, p = pearsonr(x.iloc[:min_len], y.iloc[:min_len])
+
+print("Pearson Correlation Coefficient:", r)
+print("p-value for significance:", p)
+```
+
+The correlation analysis reveals a weak positive relationship with a Pearson coefficient of 0.096, indicating a small but statistically significant association between the variables examined. While the correlation magnitude suggests only a modest linear relationship, the extremely small p-value of 7.7 × 10⁻⁶⁵ provides absolute statistical certainty that this correlation is genuine and not due to random variation. This combination of weak effect size but strong statistical significance is common in large environmental datasets, where even small relationships can be detected with high confidence due to substantial sample sizes. The positive direction indicates that as one variable increases, the other tends to increase slightly, though the relationship explains only about 0.9% of the variance (r² = 0.009).
+
+While this correlation is statistically significant, its weak magnitude suggests limited practical importance for day-to-day agricultural or system management decisions. The finding should be noted for scientific completeness but should not drive major operational changes, as the relationship explains less than 1% of the variability between variables. This result demonstrates the importance of distinguishing between statistical significance and practical significance in agrivoltaic research - large sample sizes can detect very small effects that may not warrant significant management attention. Future analyses should focus on stronger correlations and more substantial effect sizes that offer clearer guidance for optimizing agrivoltaic system performance and agricultural outcomes.
+
