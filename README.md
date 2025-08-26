@@ -110,7 +110,7 @@ The project includes a **Dash application** that provides:
 cd Dashboard
 python agrivoltaic_dashboard.py
 
-or click here: https://data-pilot-agrivoltaic-system-1.onrender.com/
+or open this link: https://data-pilot-agrivoltaic-system-1.onrender.com/
 ```
 
 ---
@@ -148,7 +148,7 @@ or click here: https://data-pilot-agrivoltaic-system-1.onrender.com/
 
 ✅ **Data Exploration & Cleaning**: Complete  
 ✅ **Interactive Dashboard**: Complete  
-✅ **Statistical Analysis**: Complete 
+✅ **Statistical Analysis**: Complete    
 ✅ **Visualization Suite**: Complete  
 ✅ **Final Report**: Complete  
 ✅ **Presentation**: In Progress  
