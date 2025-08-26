@@ -91,9 +91,8 @@ agrivoltaic-analysis/
 - **Environmental Conditions by Plot Type**: Comparison of sensor data across different plot types
 - **Dataset Overview**: Statistical summary and data type distribution
 - **Comprehensive Visualizations**: 40+ charts covering temperature, humidity, soil moisture, and irradiance
-
-### 🔄 In Progress
 - **Presentation Slides**: Final project presentation
+
 
 ---
 
@@ -110,6 +109,8 @@ The project includes a **Dash application** that provides:
 ```bash
 cd Dashboard
 python agrivoltaic_dashboard.py
+
+or click here: https://data-pilot-agrivoltaic-system-1.onrender.com/
 ```
 
 ---
@@ -150,7 +151,7 @@ python agrivoltaic_dashboard.py
 ✅ **Statistical Analysis**: Complete 
 ✅ **Visualization Suite**: Complete  
 ✅ **Final Report**: Complete  
-🔄 **Presentation**: In Progress  
+✅ **Presentation**: In Progress  
 
 ---
 
@@ -169,7 +170,7 @@ This project is educational and part of a capstone/final project. Contributions 
 
 ## Contact
 
-Created by: Nadia, Cynthia, Annick, Hadidja  
+Created by: Nadia 
 Institution: kLab Rwanda  
 
 
